@@ -1,0 +1,42 @@
+# Fundos e bordas
+
+- Cor de fundo:
+  - `background-color`
+  - A cor irá se estender por caixa do conteúdo e da caixa de preenchimento da caixa.
+- Imagem de fundo:
+  - `background-image`
+  - Se a imagem for menor que a caixa, ela irá repetir e se for maior, irá aparecer somente uma parte.
+  - Controlando a repetição: `background-repeat`
+  - Dimensionar a imagem:
+    - `background-size`
+    - `background-size: cover`: A imagem será **grande** o **suficiente** para **preencher** a caixa, mantendo a proporção. Por causa disso, pode ter partes que saem.
+    - `background-size: contain`: A imagem irá caber completamente dentro da caixa. Se não tiver uma proporção entre caixa e imagem, pode ter espaços vazios.
+  - Posição:
+    - `background-position: <x> <y>` (dois valores)
+    - Altera o posicionamento da imagem de fundo da caixa.
+    - Utiliza um sistema de coordenadas com um eixo x e eixo y onde `(0, 0)` é o canto superior esquerdo da imagem.
+- Gradientes:
+  - Gradientes se comportam como imagens e portanto são definidas por `background-image`.
+- Várias imagens:
+  - `background-image`: Separa por vírgula, as imagens de fundo posteriores vão substituindo as anteriores.
+  - Podemos ter vários valores em propriedades como `background-position` e `background-repeat`.
+  - Um valor numa determinada propriedade irá corresponder com outro valor em outra propriedade na mesma posição.
+  - Se tiver um número menor de valores, irá ocorrer um ciclo. Por exemplo, se outras propriedades fornecer N valores e uma determinada propriedade fornecer M < N valores, irá repetir os M valores a cada M valores ocorridos em outras propriedades.
+-  Fixamento de plano de fundos:
+  - `background-attachment`
+  - `background-attachment: scroll`:
+    - O plano de fundo é fixo em relação ao **elemento**.
+    - O plano de fundo rola se a página for rolada. Não rola se o elemento for rolado.
+    - Rola com o elemento.
+  - `background-attachment: fixed`:
+    - O plano é fixo em relação a **viewport**,
+    - O plano de fundo não rola se a página ou o elemento for rolado.
+  - `background-attachment: local`:
+    - O plano é fixo em relação ao **conteúdo do elemento**.
+    - O plano de fundo rola se a página ou o elemento for rolado.
+    - Rola com o conteúdo do elemento.
+- Propriedade abreviada:
+  - `background`
+  - Podemos inserir vários planos de fundo com uma vírgula.
+  -  `<position>/<size>`
+  - A cor de fundo vem por último.
