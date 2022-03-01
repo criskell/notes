@@ -44,8 +44,6 @@
 
 - Uma classe numa cláusula `except` é compatível com uma exceção se for a mesma classe ou se for uma classe base dela.
 
-- A última cláusula pode omitir os nomes da exceção.
-
 - A cláusula `else` pode ser utilizada para executar código quando não houver exceção na cláusula `try`.
 
 - A exceção pode ter zero ou mais argumentos **associados**.

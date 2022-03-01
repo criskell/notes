@@ -1,30 +1,12 @@
-# Classes
+# POO
 
 - Classes é uma forma de organizar dados e funcionalidades juntos.
 - Classe é um tipo e podemos criar instâncias a partir dela.
 - Instâncias tem atributos para manter o estado e métodos para alterar o estado.
 
-## [Plano de estudos]
-
-- Ainda falta: Entender mais sobre tudo
-- Dúvidas:
-  - Instância x Objeto
-  - Objeto de instância, objeto de método, variáveis de classe e instância
-  - Herança e Herança múltipla
-  - Geradores
-  - Atributos de dados x atributo de métodos (objeto de instâncias)
-- Artigos para ler:
-  - https://panda.ime.usp.br/pensepy/static/pensepy/13-Classes/classesintro.html#:~:text=O%20Python%20%C3%A9%20uma%20linguagem,orientada%20%C3%A0%20objetos%20(POO).&text=Na%20programa%C3%A7%C3%A3o%20orientada%20%C3%A0%20objetos,os%20dados%20quanto%20as%20funcionalidades.
-  - https://www.alura.com.br/conteudo/python-3-avancando-orientacao-objetos
-  - http://pythonclub.com.br/oo-de-outra-forma-1.html
-- Cursos:
-  - Python da USP
-  - OOP da UNIVESP
-  - OOP do CursoEmVídeo
-
 ## O que é OOP
 
-- OOP é um paradigma de programação com base no conceito de "objetos" que possuem dados e comporamentos.
+- OOP é um paradigma de programação com base no conceito de "objetos" que possuem dados e comportamentos.
 
 ## Objeto no Python
 
@@ -86,10 +68,13 @@ class F:
 
 - Chamar um método com é equivalente a chamar a função correspondente com o objeto instância no primeiro argumento.
 - O primeiro argumento de funções definidas em classes é o `self`.
+- Objetos de método possuem um objeto de instância e um objeto de função.
+- O escopo global associado a um método é sempre o namespace global do módulo.
 
 ## Variável de instância e de classe
 
 - Variável de instância são variáveis para instâncias específicas e variáveis de classes são compartilhadas por todas as instâncias.
+- Numa pesquisa de atributo, variáveis de instância são priorizadas.
 
 ## Herança
 
@@ -100,7 +85,9 @@ class F:
 
 - `<expressao>` deve retornar um objeto de classe base.
 
-- A definição de classes derivadas lembram da classe base. Se um atributo não for encontrado na classe derivada, irá ser procurado na classe base e assim sucessivamente até achar o atributo.
+- A definição de classes derivadas lembram da classe base.
+
+- Se um atributo (de dados ou métodos) não for encontrado na classe derivada, irá ser procurado na classe base e assim sucessivamente até achar o atributo.
 
 ### Herança múltipla
 
@@ -131,4 +118,14 @@ class F:
   (x for x in range(5))
   ```
 
-  
+
+## Referências
+
+- Variáveis guardam referências.
+- O operador de atribuição copia o conteúdo da variável e o conteúdo da variável é uma referência.
+- O operador `==` compara o conteúdo da variável (referência).
+- A passagem de parâmetros copia o conteúdo da variável (referência), funciona como uma atribuição.
+
+## Encapsulamento
+
+- 
