@@ -4,7 +4,7 @@
 
 - Podemos aplicar CSS no HTML com estilos externos, internos e inline.
 - Estilos externos: São estilos que residem fora do documento HTML.
-- Estilos internos: São estilos que residem dentro de um documento HTML no elemento `style`.
+- Estilos internos ou incorporados: São estilos que residem dentro de um documento HTML no elemento `style`.
 - Inline: São estilos que são aplicados a um único elemento no atributo `style`.
 
 ## Seletores

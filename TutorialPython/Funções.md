@@ -4,23 +4,9 @@
 
 ## Definição de funções
 
-- Para criar uma função é necessário o uso da palavra-chave def:
-
 ```python
 def <nome-funcao>(<parametros-formais>):
     <corpo-da-funcao>
-```
-
-- O que fica entre parênteses são os parâmetros formais.
-
-### Docstrings
-
-- Docstrings são strings que são colocadas na primeira linha do bloco da função e são utilizadas para documentação.
-
-```python
-def soma(x, y):
-    """soma dois numeros"""
-    return x + y
 ```
 
 ## Execução de funções

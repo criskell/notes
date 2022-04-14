@@ -75,28 +75,15 @@ class F:
 
 - Variável de instância são variáveis para instâncias específicas e variáveis de classes são compartilhadas por todas as instâncias.
 - Numa pesquisa de atributo, variáveis de instância são priorizadas.
+- Para alterar uma variável de uma classe, devemos utilizar o nome da classe e não uma instância dela, caso contrário iremos criar uma variável de instância.
 
-## Herança
-
-- ```python
-  class ClasseDerivada(<expressao>):
-      pass
-  ```
-
-- `<expressao>` deve retornar um objeto de classe base.
-
-- A definição de classes derivadas lembram da classe base.
-
-- Se um atributo (de dados ou métodos) não for encontrado na classe derivada, irá ser procurado na classe base e assim sucessivamente até achar o atributo.
-
-### Herança múltipla
-
-- Definir várias classes bases.
-
-## Variáveis privadas
+## Variáveis privadas e protegidas
 
 - Não há suporte para variáveis privadas.
 - Desfiguração de nomes: todas as ocorrências de nomes `<n>` no formato `__<name>` (com no máximo um sublinhado no final) numa definição de classe, serão substituídas por `_<nomedaclasse><n>`
+- Geralmente, atributos na forma `__attr` são chamados de privados e atributos na forma `_attr` de protegidos.
+- Atributos privados são ditos para serem acessados somente por sua classe.
+- Atributos protegidos são ditos para serem acessados somente por sua classe e subclasses.
 
 ## Iteradores
 
@@ -128,4 +115,38 @@ class F:
 
 ## Encapsulamento
 
-- 
+- Encapsular é esconder os dados de uma classe e o funcionamento dos comportamentos.
+- Encapsulamento pode ser visto como o agrupamento de dados e métodos (getters e setters) que operam nestes dados.
+
+## Propriedades
+
+- Propriedade é um atributo numa classe que foi criada utilizando o decorator `@property`.
+
+## Polimorfismo
+
+- Polimorfismo é a capacidade de um código ser referenciado de várias formas.
+- Duck typing é um estilo de programação em que não testamos o tipo do objeto para ver se atende uma interface e simplesmente chamamos o método.
+
+## Métodos estáticos
+
+```python
+class A:
+    @staticmethod
+    def f():
+        ...
+```
+
+- Um método estático é um método que não precisa de uma instância da classe.
+- Podemos chamar na classe ou numa instância.
+
+## Métodos de classes
+
+```python
+class A:
+    @classmethod
+    def f(cls):
+        ...
+```
+
+- Métodos de classes são ligadas a uma classe.
+- Podemos chamar na classe ou na instância.

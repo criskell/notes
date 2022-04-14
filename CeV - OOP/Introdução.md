@@ -2,23 +2,15 @@
 
 ## O que é
 
-- 
+- Paradigma de programação baseado no conceito de objetos que possuem comportamentos e dados e se comunicam através de mensagens.
 
 ## Objetivo
 
 - Aproximar o mundo virtual do real.
 
-## Evolução dos paradigmas de programação
+## Programação procedural x OOP
 
-1. Programação de baixo nível: Nós inserimos códigos de máquina.
-2. Programação linear: Uma sequência linear de instruções. Não há desvios para outros lugares.
-3. Programação estruturada: ...
-4. Programação modular: ...
-5. OOP
-
-## Programação estruturada x OOP
-
-### Programação estruturada
+### Programação procedural
 
 - Temos uma massa de dados **global** e procedimentos que se utilizam dela.
 

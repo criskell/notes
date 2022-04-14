@@ -124,4 +124,4 @@
     - 0: Início do arquivo.
     - 1: Posição atual.
     - 2: Fim do arquivo.
-  - No modo texto, não é permitido `d != 0` quando `p != 0`. `d` quando `p == 0`, `d` precisa ser **zero** ou o número retornado por `tell()`, se for diferente disso, o comportamento é **indefinido**.
+  - No modo texto, não é permitido um deslocamento diferente de zero quando não for o inicio do arquivo. `d` quando `p == 0`, `d` precisa ser **zero** ou o número retornado por `tell()`, se for diferente disso, o comportamento é **indefinido**.
