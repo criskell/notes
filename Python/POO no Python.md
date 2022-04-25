@@ -13,24 +13,6 @@
 - Objeto, no Python, é abstração de dados. Possui: Tipo, identidade e valor.
 - Objeto é uma instância de um tipo.
 
-## Escopo e espaço de nomes
-
-- Cada objeto tem vários nomes.
-- Espaço de nomes é um mapeamento entre nomes e objetos.
-- Escopo é uma região textual de um programa que permite o **acesso direto** a um namespace.
-- Um namespace local é criado sempre para uma invocação de uma função.
-- Durante a execução, existem 3 ou mais escopos aninhados:
-  1. Escopo local
-  2. Escopos de funções delimitadoras
-  3. Escopo global do módulo atual
-  4. Escopo embutido
-- O escopo local fora de uma função é o escopo global do módulo.
-- Sem nenhuma declaração `nonlocal` e `global`, atribuições vão para o escopo mais interno.
-- Variáveis em escopos mais externos, sem nenhuma declaração, são somente leitura.
-- `nonlocal`: leitura e atribuições para o primeiro escopo que não é local nem global.
-- `global`: leitura e atribuições para o escopo que guarda os nomes globais.
-- Atribuições apenas vinculam nomes a objetos.
-
 ## Classes
 
 ```python
@@ -84,34 +66,6 @@ class F:
 - Geralmente, atributos na forma `__attr` são chamados de privados e atributos na forma `_attr` de protegidos.
 - Atributos privados são ditos para serem acessados somente por sua classe.
 - Atributos protegidos são ditos para serem acessados somente por sua classe e subclasses.
-
-## Iteradores
-
-- Iteradores definem uma função `__next__` que retorna o próximo item e levanta uma exceção `StopIteration` quando não há mais itens para iterar.
-- O método `__iter__` é utilizado para retornar iteradores.
-- O laço `for` chama a função `iter` no objeto para retornar um iterador.
-
-## Geradores
-
-- Geradores é um mecanismo para criar iteradores.
-- São escritos como funções que possuem `yield`, esta instrução retorna dados.
-- Quando o `next` é executado, sempre a função volta de onde parou.
-
-### Expressões de geradores
-
-- Funcionam de forma semelhante a compreensões de listas, mas com parênteses ao invés de colchetes:
-
-  ```python
-  (x for x in range(5))
-  ```
-
-
-## Referências
-
-- Variáveis guardam referências.
-- O operador de atribuição copia o conteúdo da variável e o conteúdo da variável é uma referência.
-- O operador `==` compara o conteúdo da variável (referência).
-- A passagem de parâmetros copia o conteúdo da variável (referência), funciona como uma atribuição.
 
 ## Encapsulamento
 
