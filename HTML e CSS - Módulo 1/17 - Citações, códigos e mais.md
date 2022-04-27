@@ -20,6 +20,7 @@
 - Citações completas podem ser escritas também utilizando citações em bloco com a tag `blockquote`.
 - Esta tag **quebra a linha** e **recua para a direita**.
 - Podemos utilizar a tag `blockquote` para **seções de textos** que foram trazidas de outro lugar.
+- O atributo `cite` permite dizer o link em que o texto foi retirado.
 
 ## Abreviações
 

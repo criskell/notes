@@ -1,7 +1,7 @@
 # Diferença entre HTML, CSS e JavaScript
 
-- HTML é focada em conteúdo.
-- CSS é focada em estilos.
+- HTML é focada na estrutura do conteúdo.
+- CSS é focada nos estilos do conteúdo.
 - JavaScript é focada em interações.
 
 ## HTML

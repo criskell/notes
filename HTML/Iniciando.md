@@ -14,6 +14,7 @@
 - O elemento é a tag de abertura, o conteúdo e a tag de fechamento.
 - Elementos podem ter atributos e estes atributos aparecem na tag de abertura.
 - Os atributos definem **informações extras** do elemento.
+- `Tag de abertura (+atributos) + conteúdo + tag de de fechamento = Elemento`
 
 ## Aninhamento de elementos HTML
 
@@ -22,6 +23,7 @@
 ## Elementos vazio
 
 - Não possuem conteúdo e nem tag de fechamento.
+- Exemplo: `<br>`
 
 ## Anatomia de um documento HTML
 
@@ -68,3 +70,12 @@
 
 - Referências de entidades representam um caractere.
 - Começa com `&` e termina com `;`.
+- Exemplo: `&nbsp;`
+
+## Questões
+
+1. O que é o HTML
+2. Qual é a anatomia de um elemento?
+3. O que é um elemento?
+4. Qual é a anatomia de uma página web?
+5. Quando usar listas ordenadas e não ordenadas?

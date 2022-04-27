@@ -22,9 +22,7 @@
 - Ao escanear a cadeia de namespaces, a precedência irá ser de:
   1. Data-descriptors
   2. Variáveis de instância
-  3. Non-data descriptors
-  4. Variáveis de classes
-
+  3. Non-data descriptors e Variáveis de classes
 - Os métodos somente serão chamados se a instância da classe do descriptor aparecer no dicionário da classe proprietária ou no dicionário das classes pais.
 
 ## Protocolo de descriptor

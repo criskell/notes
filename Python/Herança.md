@@ -21,7 +21,8 @@
 
 ## Função super
 
-- `super()`
+- Dado uma subclasse (opcional) e uma instância desta subclasse (opcional), o `super()` irá retornar um objeto proxy que delega chamadas a métodos para os métodos de outra classe.
+- 
 
 ## Herança múltipla
 

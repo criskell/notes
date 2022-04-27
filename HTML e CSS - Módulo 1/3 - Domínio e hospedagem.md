@@ -13,6 +13,7 @@
 ## Domínio
 
 - É dividido em 2 partes, nome de domínio e TLD.
+- `nome de dominio + tld = dominio`
 - Exemplo: github.com
   - github é o nome de domínio
   - .com é o TLD
@@ -28,3 +29,8 @@
 ### Subdomínio
 
 - Por exemplo, na URL criskell.github.io, criskell é o subdomínio, github.io é o domínio.
+
+## Questões
+
+1. O que é o domínio e qual sua anatomia?
+2. Diferencie: ccTLD e gTLD.

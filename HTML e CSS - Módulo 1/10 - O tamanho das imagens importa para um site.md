@@ -1,4 +1,4 @@
 # O tamanho das imagens importa para um site
 
-- Não precisa ter o tamanho máximo.
+- Evite carregar no tamanho máximo.
 - Podemos utilizar o GIMP para redimensionar imagens.
