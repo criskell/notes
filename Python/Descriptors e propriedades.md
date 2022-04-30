@@ -55,3 +55,7 @@
 
 - Objetos do tipo função são non-data descriptors.
 - Ao acessar um objeto função por meio de um atributo num objeto, um método vinculado é retornado.
+
+# Propriedades
+
+- Propriedade é um atributo numa classe que foi criada utilizando o decorator `@property`.

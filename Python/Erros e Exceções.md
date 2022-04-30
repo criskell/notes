@@ -38,10 +38,6 @@
 
 - Se uma cláusula `except` for encontrada, todas as instruções dela serão executadas e a execução continua após a a instrução `try`. Caso contrário, a exceção continuará para uma instrução `try` mais externa e as instruções seguintes a declaração `try` serão ignoradas.
 
-- Uma exceção não tratada é uma exceção que não foi tratada por nenhum tratador e finaliza a execução com uma mensagem de erro.
-
-- Uma cláusula de exceção pode tratar múltiplas exceções especificando uma tupla, por exemplo: `except (ValueError, TypeError):`
-
 - Uma classe numa cláusula `except` é compatível com uma exceção se for a mesma classe ou se for uma classe base dela.
 
 - A cláusula `else` pode ser utilizada para executar código quando não houver exceção na cláusula `try`.

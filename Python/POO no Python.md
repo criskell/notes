@@ -4,14 +4,12 @@
 - Classe é um tipo e podemos criar instâncias a partir dela.
 - Instâncias tem atributos para manter o estado e métodos para alterar o estado.
 
-## O que é OOP
-
-- OOP é um paradigma de programação com base no conceito de "objetos" que possuem dados e comportamentos.
-
 ## Objeto no Python
 
-- Objeto, no Python, é abstração de dados. Possui: Tipo, identidade e valor.
+- Objeto, no Python, é abstração de dados.
+- Possui: Tipo, identidade e valor.
 - Objeto é uma instância de um tipo.
+- Possui uma quantidade de referências também.
 
 ## Classes
 
@@ -66,20 +64,6 @@ class F:
 - Geralmente, atributos na forma `__attr` são chamados de privados e atributos na forma `_attr` de protegidos.
 - Atributos privados são ditos para serem acessados somente por sua classe.
 - Atributos protegidos são ditos para serem acessados somente por sua classe e subclasses.
-
-## Encapsulamento
-
-- Encapsular é esconder os dados de uma classe e o funcionamento dos comportamentos.
-- Encapsulamento pode ser visto como o agrupamento de dados e métodos (getters e setters) que operam nestes dados.
-
-## Propriedades
-
-- Propriedade é um atributo numa classe que foi criada utilizando o decorator `@property`.
-
-## Polimorfismo
-
-- Polimorfismo é a capacidade de um código ser referenciado de várias formas.
-- Duck typing é um estilo de programação em que não testamos o tipo do objeto para ver se atende uma interface e simplesmente chamamos o método.
 
 ## Métodos estáticos
 

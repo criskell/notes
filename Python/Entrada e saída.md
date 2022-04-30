@@ -80,13 +80,6 @@
 
   - `tipo`: Determina como os dados devem serem apresentados. Por exemplo, se os dados forem do tipo inteiro, o tipo `b` apresenta o número na base 2.
 
-### Alguns métodos de formatação em strings
-
-- Método `rjust(w)`: Alinha a string à direita, retornando uma string de comprimento `w`.
-- Método `ljust(w)`: Alinha a string à esquerda, retornando uma string de comprimento `w`.
-- Método `center(w)`: Centraliza a string, retornando uma string de comprimento `w`.
-- Método `zfill(w)`: Preenche uma string numérica com zeros à esquerda para retornar uma string de comprimento `w`.
-
 ### Formatação antiga de strings
 
 - O operador `%` é utilizada para formatar uma string com uma tupla de valores.
@@ -109,7 +102,6 @@
 - Modo texto é um modo de arquivos em que strings de *caracteres* são escritas e lidas de arquivos.
 - Modo binário é um modo de arquivos em que strings de *bytes* são escritas e lidas de arquivos.
 - No modo texto, na leitura, o terminador de linha da plataforma é convertido para `\n` e, na escrita, `\n` é convertido para o terminador de linha da plataforma.
-- O arquivo deverá ser fechado para que as todas alterações sejam enviadas para o disco.
 - Podemos iterar o arquivo no modo texto com `for` retornando todas as linhas do arquivo.
 
 ### Métodos de arquivos
@@ -124,4 +116,5 @@
     - 0: Início do arquivo.
     - 1: Posição atual.
     - 2: Fim do arquivo.
-  - No modo texto, não é permitido um deslocamento diferente de zero quando não for o inicio do arquivo. `d` quando `p == 0`, `d` precisa ser **zero** ou o número retornado por `tell()`, se for diferente disso, o comportamento é **indefinido**.
+  - No modo texto, não é permitido um deslocamento diferente de zero quando não for o inicio do arquivo.
+  - `d` quando `p == 0`, `d` precisa ser **zero** ou o número retornado por `tell()`, se for diferente disso, o comportamento é **indefinido**.

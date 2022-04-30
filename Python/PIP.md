@@ -58,3 +58,4 @@
 12. O que isso faz num arquivo requirements.txt: `package>=1.0, <2.0`
 13. Para que serve o comando `freeze` no PIP?
 14. Como desistalar pacotes?
+14. Como atualizar um pacote?
