@@ -1,6 +1,6 @@
 # Loops
 
-# For
+## For
 
 ```python
 for <var> in <iterable>:

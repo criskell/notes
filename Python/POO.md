@@ -1,7 +1,7 @@
 # POO
 
 - Classes é uma forma de organizar dados e funcionalidades juntos.
-- Classe é um tipo e podemos criar instâncias a partir dela.
+- Classe é um tipo e podemos criar instâncias a partir dela, que são objetos deste tipo.
 - Instâncias tem atributos para manter o estado e métodos para alterar o estado.
 
 ## Objeto no Python
@@ -14,35 +14,41 @@
 ## Classes
 
 ```python
-class F:
-    declaracao1
-    declaracao2
-    declaracaoN
+class nome-da-classe(classes-bases):
+    corpo-da-classe
 ```
 
 - Dentro podemos ter várias declarações além de definições de métodos.
 - Ao executar uma definição de classe, um novo namespace é criado e o escopo local é associado a este namespace. Atribuições e definições de métodos vão para este namespace.
 - Ao executar toda uma definição, um objeto classe é criado com o conteúdo deste namespace o escopo local antigo é reativado e o nome da classe é vinculado ao objeto classe.
 
-## Objeto de classe
+### Objeto de classe
 
 - Operações: Referências a atributos e instaciação.
+- Possui atributos.
 - Referências a atributos:
   - `Classe.atributo`
   - Os nomes de atributos válidos são todos os nomes do namespace da classe.
+  - Atributos implícitos:
+    - `__dict__`: Contém o namespace da classe.
 - Instanciação:
   - `Classe()`
   - Cria uma nova instância da classe `Classe`.
   - O método `__init__` serve para inicializar o estado de instâncias.
   - Instanciar é criar um novo objeto.
 
-## Objeto de instância
+## Instâncias
+
+- Instância de uma classe é um objeto.
+
+### Objeto de instância
 
 - Operações: Referências de atributos
 - Dois tipos de referências:
   - Atributo de dados
   - Atributo de método
 - Atributo de método: Método é uma função que "pertence" a um objeto. Todos os atributos do tipo função da classe definem métodos correspondentes em instâncias.
+- Busca de atributos: Se não for encontrado na instância, irá procurar na classe e se não achar procura nas classes bases.
 
 ## Objeto de método
 
