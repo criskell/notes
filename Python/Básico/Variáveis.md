@@ -44,4 +44,5 @@
 
 - Variáveis são nomes simbólicos que são referências para objetos.
 - Atribuir um nome a um objeto (ex.: `x = ...`), cria uma *binding* do nome `x` para o objeto `...`.
-- Argumentos são passados para parâmetros via atribuição, ou seja, os parâmetros são apenas outros nomes para os objetos passados via argumentos e fazer um *rebind* dos parâmetros alteram apenas para qual objeto o parâmetro aponta.
+- Argumentos são passados para parâmetros via atribuição, ou seja, os parâmetros são apenas outros nomes para os objetos passados via argumentos e fazer uma *reatribuição* dos parâmetros alteram apenas para qual objeto o parâmetro aponta.
+- Cada parâmetro se torna um novo apelido.
