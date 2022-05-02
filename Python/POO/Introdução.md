@@ -48,7 +48,13 @@ class nome-da-classe(classes-bases):
   - Atributo de dados
   - Atributo de método
 - Atributo de método: Método é uma função que "pertence" a um objeto. Todos os atributos do tipo função da classe definem métodos correspondentes em instâncias.
-- Busca de atributos: Se não for encontrado na instância, irá procurar na classe e se não achar procura nas classes bases.
+- Atributos implícitos:
+  - `__class__`: Objeto da classe.
+  - `__dict__`: Mapeamento para armazenar os atributos.
+
+- Busca de atributos:
+  - Se não for encontrado na instância, irá procurar na classe e se não achar procura nas classes bases.
+
 
 ## Objeto de método
 

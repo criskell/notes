@@ -24,6 +24,15 @@
   2. Variáveis de instância
   3. Non-data descriptors e Variáveis de classes
 - Os métodos somente serão chamados se a instância da classe do descriptor aparecer no dicionário da classe proprietária ou no dicionário das classes pais.
+- Para encontrar um atributo numa instância de uma classe:
+  1. Pesquise o atributo na hierarquia de classes (MRO e com a exceção das metaclasses).
+  2. Se encontrar um *data descriptor*, o valor do atributo é o retorno do método `__get__`, caso contrário
+  3. Busque o atributo no `__dict__` da instância e se encontrar, retorne.
+  4. Se não encontrar, mas no caso onde achado um atributo na hierarquia de classes:
+     1. Caso seja um `non-data descriptor`, retorne `__get__(...)`
+     2. Caso seja um atributo normal, retorne ele próprio
+  5. Chame o método `__getattr__` caso haja.
+  6. Lançe `AttributeError` caso não ache.
 
 ## Protocolo de descriptor
 
@@ -55,7 +64,3 @@
 
 - Objetos do tipo função são non-data descriptors.
 - Ao acessar um objeto função por meio de um atributo num objeto, um método vinculado é retornado.
-
-# Propriedades
-
-- Propriedade é um atributo numa classe que foi criada utilizando o decorator `@property`.
