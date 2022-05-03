@@ -21,8 +21,10 @@
 
 ## Função super
 
-- Dado uma subclasse (opcional) e uma instância desta subclasse (opcional), o `super()` irá retornar um objeto proxy que delega chamadas a métodos para os métodos de outra classe.
-- 
+- Dado uma subclasse (opcional) e uma instância desta subclasse (opcional), o `super([type, [, object-or-type]])` irá retornar um objeto proxy que delega chamadas a métodos para os métodos de outra classe.
+- Delega chamadas a métodos para uma classe pai ou irmã de `type`.
+- `object-or-type` determina o MRO. A busca começa com a classe logo após `type` no MRO.
+- Chama o próximo método no MRO.
 
 ## Herança múltipla
 
