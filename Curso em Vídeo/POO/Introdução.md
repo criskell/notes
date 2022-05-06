@@ -24,6 +24,6 @@
 - Confiável: Isolar uma parte e não **afetar nenhuma**.
 - Oportuno: Partes podem serem desenvolvidas em paralelo.
 - Manutenível: A atualização do software se torna mais fácil.
-- Extensível: Podemos extender uma parte.
+- Extensível: Podemos estender uma parte.
 - Reutilizável: Podemos reutilizar partes do software.
-- Natural: "Tornar a programação "
+- Natural: Permite a representação do código nos termos de seu problema

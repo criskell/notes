@@ -25,6 +25,10 @@
 - Não possuem conteúdo e nem tag de fechamento.
 - Exemplo: `<br>`
 
+## Elemento x tag
+
+- Elemento é uma parte de uma página web e fazem parte do DOM; tag é utilizada para marcar o início ou fim de um elemento no código.
+
 ## Anatomia de um documento HTML
 
 ```html
