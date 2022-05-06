@@ -1,7 +1,7 @@
 # Layout
 
 - As técnicas de layout nos permitem posicionar um elemento numa página em relação aos seguintes fatores:
-  - Sua posição padrão no fluxo normal.
+  - Sua posição no fluxo normal.
   - O container pai.
   - Elementos ao redor dele.
   - Viewport e janela.
@@ -49,3 +49,12 @@
     - Para ativar:
       - `column-count`: Qtd. de cols.
       - `column-width`: O browser irá criar o **maior** número possível de colunas usando a largura especificada.
+
+
+
+## Perguntas
+
+1. O que são técnicas de layout?
+2. O que é o fluxo normal?
+3. O que são tabelas CSS?
+4. O que é float?
