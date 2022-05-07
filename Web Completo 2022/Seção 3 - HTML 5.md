@@ -24,3 +24,37 @@
 ## Imagens
 
 - Elemento `img`.
+
+## Tabelas
+
+- Tabelas são utilizadas para criar dados tabulares no HTML.
+- Uma tabela é composta por cabeçalhos, colunas e linhas.
+- Elementos:
+  - `table`:
+    - Representa uma tabela.
+    - Atributos:
+      - `align`: Alinha a tabela.
+  - `tr`: Representa uma linha da tabela.
+  - `td`: Representa uma célula.
+    - `colspan="n"`: Permite alterar a extensão da célula para `n` colunas.
+    - `rowspan="n"`: Permite alterar a extensão da célula para `n` linhas. Ou seja, ela irá ocupar mais linhas na tabela.
+    - `height`: Altura da célula.
+    - `align="a"`: Alinha o conteúdo da célula numa das seguintes posições:
+      - `center`: Ao centro.
+      - `left`: Esquerda.
+      - `right`: Direita.
+  - `th`: Representa um cabeçalho da tabela.
+
+## Formulários
+
+- Formulários são utilizados para capturar informações do usuário.
+- Elementos:
+  - `form`:
+    - Representa um formulário.
+    - Atributos:
+      - `action`: Para onde os dados do formulário serão enviados.
+  - `input`:
+    - Representa uma entrada de dados.
+    - Atributos:
+      - `type`: Tipo da entrada.
+      - `name`: Nome da entrada.
