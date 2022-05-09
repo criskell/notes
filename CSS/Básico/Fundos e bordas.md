@@ -29,7 +29,7 @@
     - O plano de fundo rola se a página for rolada. Não rola se o elemento for rolado.
     - Rola com o elemento.
   - `background-attachment: fixed`:
-    - O plano é fixo em relação a **viewport**,
+    - O plano é fixo em relação a **viewport**.
     - O plano de fundo não rola se a página ou o elemento for rolado.
   - `background-attachment: local`:
     - O plano é fixo em relação ao **conteúdo do elemento**.

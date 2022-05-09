@@ -1,6 +1,7 @@
-# Iniciando com HTML
+# Introdução
 
 - HTML é uma linguagem de marcação utilizada para definir a estrutura do conteúdo de uma página web.
+- Consiste numa série de elementos utilizados para delimitar partes do conteúdo para que tenha um determinado significado, aparência e/ou comportamento.
 
 ## Anatomia de um elemento HTML
 
@@ -8,8 +9,8 @@
 <p class="editor-note">My cat is very grumpy</p>
 ```
 
-- A **tag de abertura** `<p>` define o começo de um elemento.
-- **A tag de fechamento** `</p>` define o fim do elemento.
+- A **tag de abertura** `<p>` que define o começo de um elemento.
+- **A tag de fechamento** `</p>` que define o fim do elemento.
 - O **conteúdo**. Neste caso é apenas texto.
 - O elemento é a tag de abertura, o conteúdo e a tag de fechamento.
 - Elementos podem ter atributos e estes atributos aparecem na tag de abertura.
