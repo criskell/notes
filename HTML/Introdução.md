@@ -84,3 +84,4 @@
 3. O que é um elemento?
 4. Qual é a anatomia de uma página web?
 5. Quando usar listas ordenadas e não ordenadas?
+6. O que são referências de entidades?

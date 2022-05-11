@@ -2,6 +2,7 @@
 
 - Um tipo de valor (ou tipo de dados) é uma coleção de valores permitidos.
 - Notação: `<tipo-de-valor>`, por exemplo `<color>`.
+- `<integer>`, `<number>`, `<dimension>`, `<length>`, `<color>`, `<image>`, `<position>`
 
 ## Tipos numéricos
 
@@ -12,8 +13,8 @@
 
 ### Comprimentos
 
-- Tipo `length`
-- São `<dimension>` que referem-se a distâncias.
+- `<length>` é para comprimentos
+- Valores `<dimension>` que referem-se a distâncias.
 - Tipo de unidade de comprimento:
   - Absoluto: Não é relativo.
   - Relativo: É relativo a outro valor.
