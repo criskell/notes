@@ -1,6 +1,10 @@
 # Valores e unidades
 
 - Um tipo de valor (ou tipo de dados) é uma coleção de valores permitidos.
+- Tipos dos tipos de dados:
+  - Tipo genérico: Não relacionado a nenhuma propriedade.
+  - Tipo específico: Relacionado a alguma(s) propriedade.
+
 - Notação: `<tipo-de-valor>`, por exemplo `<color>`.
 - `<integer>`, `<number>`, `<dimension>`, `<length>`, `<color>`, `<image>`, `<position>`
 

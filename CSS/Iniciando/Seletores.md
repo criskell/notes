@@ -1,11 +1,13 @@
 # Seletores
 
 - Seletores são padrões que correspondem com elementos HTML.
-- Podemos dividir os seletores nos seguintes tipos:
+- Seletor **simples** é uma condição única (simples/atômica) para corresponder elementos.
+- Seletor **composto** é uma sequência de seletores simples, portanto representa várias condições.
+- Seletor **complexo** é uma sequência de seletores **compostos** separados por combinadores. 
+- Podemos dividir os seletores nas seguintes categorias:
   - Seletores de tipo, classe e ID
   - Seletores de atributos
   - Pseudoclasses e pseudoelementos
-  - Combinadores
 
 ## Listas de seletores
 
@@ -67,7 +69,19 @@
 ## Combinadores
 
 - Um combinador **combina** dois seletores de forma que eles **expressam um relacionamento**.
-- Combinador **descendente** (` ` - espaço): Corresponde aos elementos correspondentes ao **segundo seletor** que possui um **ancestral** correspondente ao **primeiro seletor**.
-- Combinador **filho** (`>`): Corresponde aos elementos correspondentes ao **segundo seletor** que são filhos **diretos** dos elementos correspondidos ao **primeiro seletor**.
-- Combinador **irmão adjacente** (`+`): Corresponde ao elemento correspondente ao **segundo seletor** que é o **próximo irmão** dos elementos correspondentes ao **primeiro seletor**.
-- Combinador **irmão geral** (`~`): Corresponde aos elementos correspondentes ao **segundo seletor** que são os *-**próximos irmãos** dos elementos correspondentes ao **primeiro seletor**.
+- `X Y`: Combinador **descendente** ( - espaço):
+  - Corresponde aos elementos correspondentes ao **segundo seletor** (`Y`) que possui um **ancestral** correspondente ao **primeiro seletor** (`X`). Outra explicação:
+  - Corresponde ao elemento `Y` que seja descendente de `X`. Outra explicação:
+  - 
+- `X > Y`: Combinador **filho** (`>`):
+  - Corresponde aos elementos correspondentes ao **segundo seletor** que são filhos **diretos** dos elementos correspondidos ao **primeiro seletor**. Outra explicação:
+  - Corresponde ao elemento `Y` que seja filho imediato de `X`.  Outra explicação:
+  - Elemento `Y` que
+- `X + Y`: Combinador **irmão adjacente** (`+`):
+  - Corresponde ao elemento correspondente ao **segundo seletor** que é o **próximo irmão** dos elementos correspondentes ao **primeiro seletor**. Outra explicação:
+  - Corresponde ao elemento `Y` que seja irmão imediato de `X`, ou seja, `X` e `Y` possui o mesmo pai e `X` precede imediatamente `X`. Outra explicação:
+  - Elemento `Y` que vem logo em seguida de `X`.
+- `X ~ Y`: Combinador **irmão geral** (`~`):
+  - Corresponde aos elementos correspondentes ao **segundo seletor** que são os **próximos irmãos** dos elementos correspondentes ao **primeiro seletor**.  Outra explicação:
+  - Corresponde ao elemento `Y` quando é precedido por `X`.  Outra explicação:
+  - Elementos `Y` que vem depois de `X`.

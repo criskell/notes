@@ -44,33 +44,15 @@
 
 ## Cores e imagens de fundos
 
-- Adicionando cores com background-color e imagens com background-image.
+- Para definir cores, utilizamos a propriedade **background-color**.
+-  Para adicionar imagens em fundos, utilizamos a propriedade **background-image**. Por exemplo: `background-image: url(https://sm.ign.com/ign_br/screenshot/default/embargo-sat-19-feb-14-20-pt-even-attack-on-titans-english-vo_dtjc.jpg);`
+- Se `tamanho(imagem) < tamanho(container)`, haverá repetições, no eixo X ou eixo Y. Para controlar esta repetição: `background-repeat`. Valores:
+  - `repeat-x`: Repetir no **eixo X**.
+  - `repeat-y`: Repetir no **eixo Y**.
 
-```css
-/* Para definir cores, utilizamos a propriedade background-color. */
-            /* Para adicionar imagens em fundos, utilizamos a propriedade background-image */
-            background-image: url(https://sm.ign.com/ign_br/screenshot/default/embargo-sat-19-feb-14-20-pt-even-attack-on-titans-english-vo_dtjc.jpg);
-/* Se size(imagem) < size(container) haverá repetições, no eixo X ou eixo Y.*/
-/* Valores:*/
-/* repeat-x: Repetir no eixo X. */
-/* repeat-y: Repetir no eixo Y. */
-background-repeat: repeat-x;
-
-/**
-Altera o anexamento da imagem em algum lugar.
-*/
-background-attachment: scroll;
-
-/**
-Define a posição da imagem no container.
-*/
-background-position: center center;
-
-/* Shorthand */
-background: blue url();
-```
-
-
+- Alterar o posicionamento na imagem no container: `background-position`.
+- Shorthand: `background`
+- Alterar o anexamento/fixamento da imagem: `background-attachment`
 
 ## Estilos externos
 
@@ -83,3 +65,19 @@ background: blue url();
 - Descreve os elementos HTML como caixas que possui conteúdo, paddings (espaçamento interno), bordas e margens (espaçamento externo).
 - Colapso de margem acontece quando duas margens se juntam.
 - `box-sizing: border-box`: O padding + bordas é contabilizada na propriedade `width`.
+
+## Elementos flutuantes
+
+- A propriedade **float** faz com que altere se o fluxo dos elementos, fazendo determinados elementos **flutuar** na direita ou esquerda.
+- Ao fazer isso, o elemento sai do fluxo normal do documento e vai para um outro fluxo (flutuante). 
+- O elemento pai não expande até o final dos elementos flutuantes, acha que não existe.
+- Propriedade **clear**: Limpa o fluxo flutuante num outro lado.
+
+## Elementos inline, inline-block e block
+
+- Elementos block:
+  - Ocupa toda a largura do pai e fica um abaixo do outro.
+- Elementos inline:
+  - Dimensionamento intrínsico e não fica nova linha.
+- Elementos inline-block:
+  - Itens um abaixo do outro e seu dimensionamento é intrínsico.

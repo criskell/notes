@@ -8,7 +8,7 @@
 
 - A notação hexadecimal especifica a cor na forma RGB utilizando dígitos hexadecimais, ou seja, atribui intensidades numéricas (0-255) para vermelho, verde e azul.
 - Para converter um número hexadecimal de 2 dígitos para um número decimal, devemos multiplicar o primeiro dígito por 16 e somar com o segundo dígito, por ex.: `BF (base 16) = 11 * 16 + 15 = 191`
-- Códigos hexadecimais podem ter dois dígitos a mais, especificando um valor alfa, ou seja, um valor para transparência, de 0 a 255. Ex.: `#FF00FF55 => alfa = 0x55 = 85 = 33.3333333333% de transparência (255)`
+- Códigos hexadecimais podem ter dois dígitos a mais, especificando um valor alfa, ou seja, um valor para opacidade, de 0 a 255. Ex.: `#FF00FF55 => alfa = 0x55 = 85 = 33.3333333333% de opacidade (255)`
 - Abreviações:
   - `#xyz -> #xxyyzz`
   - `#wxyz -> #wwxxyyzz`
@@ -17,7 +17,7 @@
 
 - Podemos especificar cores utilizando a função `rgb(red, green, blue)` onde `red`, `green` e `blue` equivalem aos canais vermelho, verde e azul. Podem ser números entre 0 ou 255 ou porcentagens de 255.
 - Podemos especificar na forma também de `rgb(red green blue[ / alpha])` onde:
-  - `alpha` pode ser um número decimal entre 0 e 1 ou uma porcentagem para transparência. Podemos utilizar RGB com alfa de forma mais compatível com outros navegadores utilizando a função `rgba`.
+  - `alpha` pode ser um número decimal entre 0 e 1 ou uma porcentagem para opacidade. Podemos utilizar RGB com alfa de forma mais compatível com outros navegadores utilizando a função `rgba`.
 
 ### HSL
 
@@ -46,4 +46,5 @@
 ## Questões de revisão
 
 1. Como expressar cores nos formatos hexadecimal, `rgb + rgba` e `hsl + hsla`? Descreva cada parâmetro das funções e suas formas.
-2. Quais são as palavras-chaves especiais para descrever cores?
+2. Como converter um número hexadecimal de 2 dígitos para um número na base 10?
+3. Quais são as palavras-chaves especiais para descrever cores?
