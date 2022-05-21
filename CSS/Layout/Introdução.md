@@ -11,13 +11,19 @@
     - Aqui o HTML é exibido na ordem exata que aparece no código-fonte.
   - Propriedade `display`:
     - Podemos alterar como os elementos são dispostos no fluxo normal, por exemplo: um elemento de nível bloco de comportamento como elemento de nível inline.
+      - `inline-block`: A caixa tem algumas características de bloco, mas flui como um conteúdo inline.54
     - No fluxo normal, os elementos possuem um valor padrão para esta propriedade que diz como deverão se comportar.
     - Além disso, permite habilitar layouts mais complexos como Flexbox, Grid e etc.
   - Float:
     - Permite alterar o comportamento de um elemento e dos elementos do tipo bloco que o seguem.
     - O elemento flutuante é movido para esquerda ou direita e o conteúdo ao redor flutua em torno dele.
   - Flexbox:
-    - Flexbox é um nome de um módulo CSS que permite facilitar o layout de elementos numa única dimensão (coluna ou linha).
+    - Flexbox é um nome de um módulo CSS que permite facilitar o layout unidimensional de elementos no eixo horizontal ou vertical.
+    - O flex converte os elementos filhos em itens flexíveis e o elemento pai passa a se chamar container flexível.
+    - A propriedade `flex` especifica como um item deve aumentar ou diminuir.
+    - Comportamento padrão:
+      - o Flex irá alinhar os elementos um ao lado do outro na direção inline e faz esticarem na direção em bloco até terem a mesma altura.
+      - Os itens ficarão no mesmo eixo e não quebrarão se ficarem sem espaços, se espremendo o máximo possível.
   - Grid:
     - Permite o layout em duas dimensões, em linhas e colunas.
     - Propriedades:
@@ -30,7 +36,8 @@
       - `static`: Posicionar o elemento no seu lugar padrão.
       - `relative`: Mover o elemento em relação a sua posição no fluxo normal.
       - `absolute`:
-        - Move o elemento completamente para fora do fluxo normal e posiciona usando os deslocamentos das bordas de um bloco que o contém.
+        - Move o elemento completamente para fora do fluxo normal e posiciona usando os deslocamentos das bordas de um bloco que o contém (containing block).
+        - Os elementos agem como se não existisse.
       - `fixed`:
         - Fixa um elemento em relação à viewport.
       - `sticky`:

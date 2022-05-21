@@ -17,7 +17,7 @@
 
 - Podemos especificar cores utilizando a função `rgb(red, green, blue)` onde `red`, `green` e `blue` equivalem aos canais vermelho, verde e azul. Podem ser números entre 0 ou 255 ou porcentagens de 255.
 - Podemos especificar na forma também de `rgb(red green blue[ / alpha])` onde:
-  - `alpha` pode ser um número decimal entre 0 e 1 ou uma porcentagem para opacidade. Podemos utilizar RGB com alfa de forma mais compatível com outros navegadores utilizando a função `rgba`.
+  - `alpha` pode ser um número decimal entre 0 e 1 ou uma porcentagem para opacidade.
 
 ### HSL
 
@@ -31,8 +31,10 @@
     - Valor na roda de cores, na faixa de 0 a 360. Um ângulo.
     - Pode ser um número ou um valor do tipo ângulo (ex.: `0deg` ou apenas `0`).
   - `saturation`:
-    - Porcentagem de quão vibrante o tom é. Quando mais saturada, menos cinza e quanto menos saturada, mais cinza.
+    - Vibração do tom.
+    - Porcentagem de quão vibrante o **tom** é. Quando mais saturada, menos cinza e quanto menos saturada, mais cinza.
   - `luminosity`:
+    - O quanto de branco?
     - Porcentagem de quão leve a cor é.
     - Descreve a escala do preto ao branco na cor. `100%` é totalmente branco.
 
@@ -46,5 +48,8 @@
 ## Questões de revisão
 
 1. Como expressar cores nos formatos hexadecimal, `rgb + rgba` e `hsl + hsla`? Descreva cada parâmetro das funções e suas formas.
-2. Como converter um número hexadecimal de 2 dígitos para um número na base 10?
-3. Quais são as palavras-chaves especiais para descrever cores?
+2. O que é saturação?
+3. O que é luminosidade?
+4. Como converter um número hexadecimal de 2 dígitos para um número na base 10?
+5. Quais são as palavras-chaves especiais para descrever cores?
+6. Como funcionam as porcentagens das funções `rgb` e `rgba`?

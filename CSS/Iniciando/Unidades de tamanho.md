@@ -8,8 +8,7 @@
 
 - Frações que se referem a outro valor.
 - Ao que é referido:
-  - Na propriedade `width`: Na largura do container pai.
-  - Nas propriedades `margin` e `padding`: Na largura do container pai.
+  - Na propriedade `width`, `margin` e `padding`: Na largura do container pai.
   - Na função `transform`: É referido a largura do elemento.
 
 ## Dimensões e comprimentos

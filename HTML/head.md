@@ -34,7 +34,7 @@
   - Atributo `lang` no elemento `html`: Altera a **linguagem primária do documento**, permitindo que a página seja indexada mais facilmente e ajudando na acessibilidade.
   - Podemos utilizar este atributo em outras partes do documento, para marcar diferentes conteúdos com uma linguagem diferente da principal.
 
-## Perguntas de revisão -Sublime text
+## Perguntas de revisão
 
 1. O que é o **head**?
 2. O que são metadados?
