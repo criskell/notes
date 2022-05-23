@@ -1,8 +1,21 @@
 # Fluxo normal
 
 - É a maneira padrão em que os elementos numa página web são dispostos se não houver alterações no layout.
+- Caixas no fluxo normal faz parte de um contexto de formatação (bloco ou inline).
+- Contexto de formatação de blocos:
+  - Num contexto de formatação de bloco, os blocos são dispostos verticalmente sequencialmente.
+- Contexto de formatação inline:
+  - As caixas inline são dispostas horizontalmente.
+- Dentro/fora do fluxo:
+  - Dentro do fluxo:
+    - Aparece na ordem do HTML.
+    - Não está fora do fluxo.
+  - Fora do fluxo:
+    - Float, `position: fixed || absolute`, elemento `html`
+    - Caixas que saíram de sua posição do fluxo normal e não possui uma interação com o conteúdo ao redor normal.
+    - Itens fora do fluxo criam um novo contexto de formatação de blocos.
 - Como funciona:
-  1. Box model: O **box model** é aplicado, ou seja, toda margem, padding, borda e etc. é aplicada.
+  1. Box model: O **box model** é aplicado.
   2. Aplicar o dimensionamento dos elementos `block` e `inline`:
      - Os elementos do nível de **bloco** preenchem todo o espaço na dimensão inline disponível no elemento que o contém e cresce na dimensão de bloco para acomodar seu conteúdo.
      - Já os elementos do nível **inline**, seu tamanho é o tamanho suficiente para acomodar seu conteúdo e não podemos alterar sua largura e nem altura, pois eles apenas vivem nos elementos de bloco.
