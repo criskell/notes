@@ -4,8 +4,10 @@
 - Variáveis/expressões: Substítuido na renderização.
 - Tags: Controla a lógica dos templates.
 - Delimitadores:
-  - `{% ... %}`: Declarações (statements)
-  - `{{ ... }}`: Expressões para imprimir saída
+  - `{% ... %}`: Declarações de controle (statements)
+  - `{{ ... }}`:
+    - Expressões para imprimir saída.
+    - Representam partes variáveis da página.
   - `{# ... #}`: Comentários
 - Variáveis:
   - Passadas pela aplicação.
@@ -26,3 +28,31 @@
 - Testes testam uma variável/expressão contra uma expressão comum.
 - Para testar uma variável/expressão: `variavel is nome_do_teste(...argumentoN)`
 - Se possui somente um argumento não há necessidade de parênteses: `x is test y`
+
+## Declarações condicionais
+
+- Sintaxe:
+
+  - ```jinja2
+    {% if <teste> %}
+    	<verdadeiro>
+    {% else %}
+    	<falso>
+    {% endif %}
+    ```
+
+## Loops
+
+- A estrutura de controle `for` permite percorrer uma lista de elementos:
+
+  - ```jinja
+    {% for elemento in lista %}
+    	...
+    {% endfor %}
+    ```
+
+## Herança
+
+- Permite derivar um modelo de um modelo base, reutilizando templates.
+- `{% extends "a" %}`: Estabelece uma relação de herança.
+- `{% block %}`: Define um bloco que pode ser substituído nos modelos derivados.

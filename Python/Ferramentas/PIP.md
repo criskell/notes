@@ -13,6 +13,7 @@
     - O Python tem um módulo embutido que permite criar virtualenvs: `venv`.
       - `python3.10 -m venv venv`: Cria um ambiente virtual de nome `.venv`.
       - Ativando um ambiente virtual: `source venv/bin/activate`
+        - Aqui posso executar o Python executando apenas `python`.
       - Desativando um ambiente virtual: `source venv/bin/deactivate`
       - Ao ativar um ambiente virtual, podemos utilizar somente o comando `pip`.
 - PyPI:
@@ -21,6 +22,7 @@
 - Instalando pacotes:
   - `install <pacote>`
   - Este comando irá instalar o pacote as dependências do próprio pacote.
+  - Se não especificada, instala a versão mais recente.
   - Depois de instalar o pacote, só executar como qualquer pacote normal do sistema.
   - Usando um índice de pacotes customizados: `-i https://url.com`
   - Instalando a partir de um repositório do Git: `install git+https://github.com/meurepo`

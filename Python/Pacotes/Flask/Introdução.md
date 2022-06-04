@@ -14,8 +14,10 @@
 - Crie uma instância da classe: O primeiro argumento é o nome do pacote ou do módulo que o Flask utiliza para encontrar templates e arquivos estáticos.
 - Utilize o decorador `route`: Ativa uma função ao entrar numa rota. O conteúdo padrão é o HTML.
 - Rode a aplicação:
-  - `export FLASK_APP=<modulo>`
+  - `export FLASK_APP=<modulo>`: Define qual módulo o Flask deve importar.
   - `export FLASK_ENV=development`: Ativa todas as funcionalidades de desenvolvimento.
   - `flask run`:
     - Inicia o servidor de desenvolvimento
     - Ativa o modo de debug (que recarrega o código em alterações)
+    - Roda no endereço `127.0.0.1`: É o endereço do computador.
+    - Espera conexões num número de porta específico, que é 5000.

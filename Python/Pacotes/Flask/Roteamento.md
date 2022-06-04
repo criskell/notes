@@ -1,6 +1,12 @@
 # Roteamento
 
-- `@app.route()`: Vincula uma URL a uma função.
+- As rotas são as diferentes URLs da aplicação.
+- Os manipuladores de rotas são chamados de `view functions`, que são mapeadas para 1 ou N rotas.
+- Decorador `@app.route()`:
+  - Decores modificam as funções que o seguem.
+  - Vincula uma URL a uma função.
+  - Quando executar esta função, o retorno será utilizado como resposta.
+
 - Argumento `methods`:
   - Uma rota por padrão só responde métodos `GET`.
   - É uma lista de métodos da rota.
@@ -25,7 +31,12 @@
 ## Construção de URL
 
 - `flask.url_for(fn, **kwargs)`:
-  - Constrói um caminho absoluto para a função `fn`, passando todos os `kwargs` para cada parte variável da rota.
+  - Constrói um caminho absoluto para a view function `fn`, passando todos os `kwargs` para cada parte variável da rota.
+  - O nome de um endpoint é o nome da view function e é passada como primeiro argumento.
+
+## Redirecionamento
+
+- A função `redirect` permite redirecionar o usuário para outra URL.
 
 ## Arquivos estáticos
 

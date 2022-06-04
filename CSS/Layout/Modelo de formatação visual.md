@@ -11,20 +11,24 @@
 ## Fluxo normal
 
 - Elementos em fluxo normal pertencem a um contexto de formatação `block` ou `inline`.
+- `Block-level box` participa de `BFC` e `inline-level participa` de `inline FC`.
 
 ## Elementos block-level, box-level e etc
 
-- Elementos de nível de bloco:
+- `Block-level element`:
   - São formatados visualmente como blocos.
   - Geram uma caixa de nível de bloco principal:
     - Contém: Caixas descendentes + conteúdo gerado.
     - É a caixa que participa em qualquer esquema de posicionamento.
-- Block container box: Contém apenas caixas block-level ou estabelece um inline formatting context.
+- `Block container`: Contém apenas caixas block-level ou estabelece um inline formatting context (ou seja, possui apenas `inline box`).
 - `Block-level box`:
   - Caixas que participam de um BFC.
   - (com algumas exceções) é também uma block container box.
-- `Block box`: `block-level box` que é `block container box`.
-- `Block-level`: Conteúdo que participa num layout de bloco.
+- `Block box`: `block-level box` que é `block container box`, ou seja:
+  - Participa de um BFC.
+  - Contém caixas block-level ou estabelece um inline formatting context.
+
+- `Block level`: Conteúdo que participa num layout de bloco.
 - `block layout`: O layout dos `block-level box`s dentro de um BFC.
 
 ## Contextos de formatação
