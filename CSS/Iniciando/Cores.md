@@ -53,3 +53,4 @@
 4. Como converter um número hexadecimal de 2 dígitos para um número na base 10?
 5. Quais são as palavras-chaves especiais para descrever cores?
 6. Como funcionam as porcentagens das funções `rgb` e `rgba`?
+

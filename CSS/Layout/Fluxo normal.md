@@ -1,20 +1,61 @@
 # Fluxo normal
 
-- É a maneira padrão em que os elementos numa página web são dispostos se não houver alterações no layout.
-- Caixas no fluxo normal faz parte de um contexto de formatação (bloco ou inline).
-- Contexto de formatação de blocos:
-  - Num contexto de formatação de bloco, os blocos são dispostos verticalmente sequencialmente.
-- Contexto de formatação inline:
-  - As caixas inline são dispostas horizontalmente.
-- Dentro/fora do fluxo:
-  - Dentro do fluxo:
-    - Aparece na ordem do HTML.
-    - Não está fora do fluxo.
-  - Fora do fluxo:
-    - Float, `position: fixed || absolute`, elemento `html`
-    - Caixas que saíram de sua posição do fluxo normal e não possui uma interação com o conteúdo ao redor normal.
-    - Itens fora do fluxo criam um novo contexto de formatação de blocos.
-- Como funciona:
+- Também chamado de Flow Layout.
+- É a forma padrão em que os elementos numa página web são dispostos se não houver alterações no layout:
+  - Elementos/caixas **inline** fluem na direção **inline** (direção em que as **palavras** fluem no modo de escrita, por exemplo, horizontalmente)
+  - Elementos/caixas de **bloco** fluem na direção de **bloco** (direção em que os **parágrafos** fluem no modo de escrita, por exemplo, verticalmente)
+- Cada caixa no fluxo normal participa de um **contexto de formatação** (inline ou de bloco).
+- Caixas de **nível de bloco** participam em um contexto de formatação de bloco e caixas em **nível inline** participam de um contexto de formatação inline.
+- **Essencialmente**, o fluxo normal é um **conjunto de coisas** que trabalham **juntas** e que se **conhecem** no layout. Uma coisa **fora** deste fluxo funciona de forma **independente**.
+
+## Contextos de formatação
+
+- Contexto de formatação de **blocos**:
+  - Num contexto de formatação de **bloco**, num modo de escrita **horizontal**, os elementos de bloco são dispostos **verticalmente**, um abaixo do outro (assim como os parágrafos no Português). Já num modo de escrita **vertical**, os blocos são dispostos **horizontalmente**.
+  - Margens separam elementos irmãos.
+  - Por padrão, o bloco irá consumir todo o espaço disponível na **direção inline** do *containing block*.
+  - Os blocos começam na **borda inicial** do *containing block*. Assim, por exemplo, como as frases começariam num modo de escrita horizontal.
+  - Margens que se "tocam" colapsam.
+- Contexto de formatação **inline**:
+  - Elementos inline são dispostos na direção em que as frases são escritas no modo de escrita atual (horizontalmente, no português), um após o outro.
+  - Se não caber na direção inline, a caixa gerada pelo elemento é quebrada para a próxima linha, também chamada de caixa de linha.
+  - O tamanho da caixa de linha na direção de bloco (altura, no português) é determinada pela caixa mais alta na caixa de linha.
+  - Caixas anônimas são criadas para manter tudo em uma caixa.
+
+## display
+
+- A propriedade `display` determina o *tipo de exibição*.
+- *tipo de exibição* possui:
+  - **tipo de exibição externo**:
+    - Determina como a caixa irá se comportar juntamente com os outras caixas no mesmo contexto de formatação.
+    - Alguns valores:
+      - `block`: A caixa se comporta como uma caixa de nível de bloco.
+  - **tipo de exibição interno**:
+    - Determina como as caixas filhas serão dispostas.
+    - Alguns valores:
+      - `flow`: Os elementos dentro da caixa se comportarão em fluxo normal, sendo exibidos inline ou como blocos.
+
+## In-flow e out-of-flow
+
+- **In-flow**:
+  - Cada caixa que está em fluxo (normal), irá ser disposta com o layout de bloco & inline.
+  - Aparece na ordem do HTML.
+  - Não está fora do fluxo.
+  - Todos os elementos estão em fluxo com exceção dos elementos fora do fluxo.
+- **Fora do fluxo**:
+  - Float, `position: fixed || absolute`, elemento raiz `html`
+  - Caixas que **saíram** de sua posição do fluxo normal e **não possui uma interação** com o conteúdo ao redor normal. Os elementos in-flows não sabem que o out-of-flow existem.
+  - Itens fora do fluxo criam um novo contexto de formatação de bloco. O que está dentro dele pode ser visto como um mini-layout.
+  - Exemplos:
+    - Floats:
+      - Primeiro o float é colocado em sua posição no fluxo normal, tirado do fluxo (fica fora de fluxo) e depois movido para algum lado o máximo possível.
+      - Os elementos seguintes continuarão em fluxo normal, portanto, ficarão por baixo dos floats e apenas as caixas de linhas são encurtadas.
+    - Posicionamento absoluto (e fixo):
+      - A caixa é retirada do fluxo normal e o espaço que antes ele ocupava, fica para outro elemento.
+    - O elemento raiz, `html`, age como o container para todo o documento e estabelece um BFC.
+
+## O algoritmo do fluxo normal
+
   1. Box model: O **box model** é aplicado.
   2. Aplicar o dimensionamento dos elementos `block` e `inline`:
      - Os elementos do nível de **bloco** preenchem todo o espaço na dimensão inline disponível no elemento que o contém e cresce na dimensão de bloco para acomodar seu conteúdo.

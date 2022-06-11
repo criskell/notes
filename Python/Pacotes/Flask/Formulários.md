@@ -13,6 +13,9 @@
   - `SubmitField`
 - Validadores:
   - `DataRequired`
+  - `EqualTo(field)`: O campo precisa ser igual ao campo `field`.
+  - `Email()`:
+    - Precisa ter o pacote `email-validator` instalado. 
 - Para adicionar um campo, adiciona uma variável de classe utilizando algum tipo de campo, passando como primeiro argumento o rótulo do campo. Outros argumentos:
   - `validators`: Validadores de dados.
 
@@ -25,6 +28,11 @@
   - tiver um campo inválido.
 - Retorna `True`, caso contrário.
 - Podemos acessar os dados de um campo via `form.<campo>.data`
+
+## Validação própria
+
+- Todo método na classe no padrão `validate_<field-name>` será invocado além dos validadores do campo `field-name`, passando `field-name` como argumento.
+- `ValidationError`: Exceção que podemos levantar passando como primeiro argumento a mensagem de erro.
 
 ## Exibindo formulários
 
