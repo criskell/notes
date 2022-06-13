@@ -54,7 +54,26 @@
       - A caixa é retirada do fluxo normal e o espaço que antes ele ocupava, fica para outro elemento.
     - O elemento raiz, `html`, age como o container para todo o documento e estabelece um BFC.
 
-## O algoritmo do fluxo normal
+## Overflow
+
+- Um overflow ocorre quando há mais conteúdo que pode caber em uma caixa.
+- Podemos controlar o overflow utilizando `overflow`:
+  - É um shorthand para as propriedades `overflow-x` e `overflow-y`.
+  - `overflow: <overflow-x = overflow-y>`
+  - `overflow: <overflow-x> <overflow-y>`
+  - Valores:
+    - `visible`
+    - `scroll`: Mostra sempre barras de rolagem.
+    - `auto`: Mostras as barras de rolagens nas direções necessárias.
+- Indicando overflow:
+  - No eixo inline:
+    - `text-overflow`
+    - Indica um o overflow de texto na direção inline.
+    - Valores:
+      - `clip`: Corta o overflow.
+      - `ellipsis`: Mostra uma elipse.
+
+## O algoritmo do fluxo normal: resumo
 
   1. Box model: O **box model** é aplicado.
   2. Aplicar o dimensionamento dos elementos `block` e `inline`:
