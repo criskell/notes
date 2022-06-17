@@ -1,7 +1,7 @@
 # Fluxo normal
 
-- Também chamado de Flow Layout.
-- É a forma padrão em que os elementos numa página web são dispostos se não houver alterações no layout:
+- Também chamado de Flow Layout/Block and inline layout.
+- É o layout/forma padrão em que os elementos numa página web são dispostos se não fizermos alterações no layout:
   - Elementos/caixas **inline** fluem na direção **inline** (direção em que as **palavras** fluem no modo de escrita, por exemplo, horizontalmente)
   - Elementos/caixas de **bloco** fluem na direção de **bloco** (direção em que os **parágrafos** fluem no modo de escrita, por exemplo, verticalmente)
 - Cada caixa no fluxo normal participa de um **contexto de formatação** (inline ou de bloco).

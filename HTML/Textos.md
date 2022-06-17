@@ -1,7 +1,6 @@
 # Textos
 
-- Um dos trabalhos do HTML é dar significado e estrutura de texto.
-- Os elementos dão estrutura ao conteúdo.
+- Um dos trabalhos do HTML é dar significado e estrutura de texto por meio de elementos
 
 ## Parágrafos e títulos
 
@@ -17,12 +16,12 @@
     - Ordem correta: `(h1) (h2) (h3) (h2) (h3)` (sim) `(h2) (h1) (h3)` (não)
     - Máximo três por página
 - Por que utilizar marcação estrutural:
-  - Os usuários buscam geralmente conteúdos na página por títulos.
+  - Os usuários buscam geralmente conteúdos na página por títulos (índice).
   - SEO: Palavras-chaves nos títulos
   - Acessibilidade
 - Por que utilizar semântica:
   - **Significado** em oposição à **forma**.
-  - Um elemento semântico permite saber o que significa, apenas olhando. Utilizamos semântica para saber a função de algo. Se tiver a semântica errada, pode gerar problemas.
+  - Um elemento semântico permite saber o que significa, apenas olhando. Utilizamos semântica para saber a função de algo. **Se tiver a semântica errada, pode gerar problemas.**
   - `h1` é um elemento semântico, pois dá o significado ao conteúdo de "título de nível superior".
   - Por que é importante:
     - Acessibilidade e SEO
@@ -58,7 +57,7 @@
 - São elementos sem semântica com valor representacional.
 - Exemplos: `<i>`, `<u>`, `<strong>`.
 - `<i>`: transmite um significado que é transmitido tradicionalmente via itálico, por exemplo: nomes científicos, termos técnicos, palavras estrangeiras.
-- `<b>`: transmite um significado que é normalmente transmitido tradicionalmente via negrito, por exemplo: palavras-chaves de instruções, nomes de produtos.
+- `<b>`: transmite um significado que é normalmente transmitido tradicionalmente via negrito, por exemplo: palavras-chaves, nomes de produtos.
 - `<u>`: transmite um significado que é normalmente transmitido tradicionalmente via sublinhado, por exemplo: nome próprio e erros ortográficos.
 
 ## Exercícios
@@ -67,5 +66,5 @@
 2. Por que dá significado (semântica) e estrutura aos conteúdos na web?
 3. Descreva os títulos do HTML.
 4. Diferencie os tipos de listas.
-5. Como funciona a ênfase e importância no HTML? Por que enfatizamos?
+5. Como funciona a ênfase e importância no HTML? Por que enfatizar ajuda a página?
 6. O que são elementos de apresentação? Dê exemplos e descreva cada um deles.
