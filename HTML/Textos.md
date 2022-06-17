@@ -60,6 +60,44 @@
 - `<b>`: transmite um significado que é normalmente transmitido tradicionalmente via negrito, por exemplo: palavras-chaves, nomes de produtos.
 - `<u>`: transmite um significado que é normalmente transmitido tradicionalmente via sublinhado, por exemplo: nome próprio e erros ortográficos.
 
+## Listas de descrição
+
+- O elemento `dl` representa uma lista de descrição
+- Envolve um grupos de termos (`dt` - description term) e definições (`dd` description definition/details)
+- Cada termo pode ter 1 ou N descrições imediatamente adjacentes.
+
+## Citações
+
+- `blockquote`: Citações em bloco são seções retiradas de conteúdo de nível de bloco (citações estendidas).
+- `q`: Citações em linha são citações curtas.
+- Atributo `cite`: Indica a fonte da citação
+- Elemento `cite`: Título da fonte da citação.
+
+## Abreviações
+
+- O elemento `abbr` representa uma abreviação ou acrônimo, com o termo expandido dentro do atributo `title`.
+
+## Informações para contato
+
+- O elemento `address` envolve informações de contato (telefones, endereço residencial e etc.) sobre um documento dentro do elemento `article` ou `body` mais próximo.
+
+## Sobrescrito e Subscrito
+
+- Casos de uso: Marcar datas, fórmulas químicas, equações e etc. para que tenham o significado correto.
+- `sup`: Sobrescrito
+- `sub`: Subscrito
+
+## Códigos
+
+- `code`: Marcar códigos genéricos
+- `pre`: Marcar código que deve ter seus espaços em branco preservados, do mesmo jeito que está no código da página
+- `kbd`: Para marcar entrada do teclado **inserida**.
+- `samp`: Para marcar a saída de um programa (**samp**le).
+
+## Data e hora
+
+- O elemento `time` permite marcar data/hora num formato legível por máquina (acessado via o atributo `datetime`).
+
 ## Exercícios
 
 1. Em relação aos textos em páginas web, no que o HTML ajuda?
@@ -68,3 +106,9 @@
 4. Diferencie os tipos de listas.
 5. Como funciona a ênfase e importância no HTML? Por que enfatizar ajuda a página?
 6. O que são elementos de apresentação? Dê exemplos e descreva cada um deles.
+7. Quais as formas de representar citações?
+8. Por que e como utilizar o elemento `time`?
+9. Quais são as formas de representar códigos de computador?
+10. Como representar listas de descrições?
+11. Como utilizar subscrito e sobrescrito?
+12. Como utilizar abreviações?
