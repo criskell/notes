@@ -13,13 +13,13 @@
   - Possuem uma hierarquia: `h1` é o título principal, `h2` é o sub-título, `h3` é o sub-sub-título, etc.
   - Dicas para criar estruturas hierárquicas:
     - Um `h1` por página.
-    - Ordem correta: `(h1) (h2) (h3) (h2) (h3)` (sim) `(h2) (h1) (h3)` (não)
-    - Máximo três por página
-- Por que utilizar marcação estrutural:
+    - Utilizar os títulos corretos para representar certo nível de conteúdo. Por ex.: h2 para representar sub-títulos e h3 para representar subtítulo do h2 (correto) h2 para representar sub-sub-títulos e h3 para sub-títulos
+    - Máximo três níveis por página
+- Por que utilizar marcação estrutural para textos:
   - Os usuários buscam geralmente conteúdos na página por títulos (índice).
   - SEO: Palavras-chaves nos títulos
   - Acessibilidade
-- Por que utilizar semântica:
+- Semântica:
   - **Significado** em oposição à **forma**.
   - Um elemento semântico permite saber o que significa, apenas olhando. Utilizamos semântica para saber a função de algo. **Se tiver a semântica errada, pode gerar problemas.**
   - `h1` é um elemento semântico, pois dá o significado ao conteúdo de "título de nível superior".
@@ -34,6 +34,10 @@
 - Ordenadas:
   - A ordem dos itens **importa**.
   - = anterior, exceto que o container é `ol`.
+  - Atributos:
+    - `start`: início da contagem. deve ser um número, ou um n. equivalente
+    - `value`: valor **numérico** do `li`. deve ser um número, ou um n. equivalente
+    - `reversed`: inicia a contagem de forma regressiva. Se tiver elementos em excesso, o contador irá pro zero, depois pro -1, -2, etc.
 - Aninhadas:
   - Quando colocamos uma lista dentro da outra.
 
@@ -45,7 +49,7 @@
   - Enfatizar altera sutilmente o significado da frase.
   - Elemento `em`.
   - Por que utilizar:
-    - Acessibilidade (altera o tom da voz do leitor)
+    - Acessibilidade (altera o tom da voz do leitor de tela)
     - Torna o documento mais interessante em se ler
 - Importância:
   - Na linguagem humana, para enfatizar palavras importantes, enfatizamos.
@@ -55,7 +59,7 @@
 ## Elementos de apresentação
 
 - São elementos sem semântica com valor representacional.
-- Exemplos: `<i>`, `<u>`, `<strong>`.
+- Exemplos: `<i>`, `<u>`, `<b>`.
 - `<i>`: transmite um significado que é transmitido tradicionalmente via itálico, por exemplo: nomes científicos, termos técnicos, palavras estrangeiras.
 - `<b>`: transmite um significado que é normalmente transmitido tradicionalmente via negrito, por exemplo: palavras-chaves, nomes de produtos.
 - `<u>`: transmite um significado que é normalmente transmitido tradicionalmente via sublinhado, por exemplo: nome próprio e erros ortográficos.
@@ -75,11 +79,12 @@
 
 ## Abreviações
 
-- O elemento `abbr` representa uma abreviação ou acrônimo, com o termo expandido dentro do atributo `title`.
+- `abbr`: abreviação ou acrônimo, com o termo expandido dentro do atributo `title`.
 
 ## Informações para contato
 
-- O elemento `address` envolve informações de contato (telefones, endereço residencial e etc.) sobre um documento dentro do elemento `article` ou `body` mais próximo.
+- O elemento `address` envolve informações de contato (telefones, endereço residencial e etc.)
+- Sobre o elemento `article` ou `body` mais próximo.
 
 ## Sobrescrito e Subscrito
 

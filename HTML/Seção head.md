@@ -16,7 +16,7 @@
     - Adicionando a descrição com palavras-chaves, pode ajudar no SEO do site.
   - Outros tipos de metadados:
     - Alguns sites tem outros tipos de metadados que podem ser utilizados por outros sites (como redes sociais), por  exemplo:
-    - OpenGraphData: Protocolo de metadados criado pelo Facebook para prover metadados mais ricos como especificar uma imagem para a página.
+    - OpenGraphData: Protocolo de metadados mais ricos para a web.
   - Ícones:
     - Temos diversos tipos, como favicons e ícones para dispositivos Apple.
     - Favicons:
@@ -46,3 +46,4 @@
 8. Cite 2 tipos de ícones que podemos adicionar em sites.
 9. O que são favicons, como adicionar num site e por que são chamados assim?
 10. Quais são os casos de uso do elemento `meta` para descrição?
+11. Qual é a diferença do elemento `meta` para outros elementos como `title` e `link`?

@@ -54,7 +54,7 @@
 	  - `flow`:
 	    - Exibe o conteúdo da caixa com o *flow layout*.
 	    - Se a caixa for inline-level ou `run-in` e estiver participando em um FC, gerará uma caixa **inline**. Caso contrário gerará uma **block container box**.
-	    - Os seus filhos participarão de seu próprio FC ou estabelecerá um novo BFC.
+	    - Os seus filhos participarão de seu próprio FC ou estabelecerá um novo BFC (dependendo de algmas propriedades).
 	  - `flow-root`:
 	    - Gera uma `block container box` e dispõe os conteúdos segundo o `flow layout`
 	    - Gera um novo BFC e define o `FC root`
@@ -85,13 +85,11 @@
 - Além disso, define valores legados **pré-compostos de nível em linha** (ex.: inline-block e inline-flex) que mapeia para valores com a sintaxe de dois valores.
 - Tudo isso permite um mapeamento entre valores curtos e legados para valores com nova sintaxe.
 
-
-
 ## Exercícios
 
 
 
-1. O que é a propriedade `display`? Quais tipos define?
+1. O que é a propriedade `display`? Quais tipos de display define, de acordo com a spec 3?
 2. Quais são as categorias de valor para a propriedade `display`?
 3. Como a especificação de nível 3 manipula valores antigos da propriedade `display` como `inline-block` e `block`?
 4. Como funciona a nova sintaxe para a propriedade `display`?

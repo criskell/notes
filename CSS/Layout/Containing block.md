@@ -9,7 +9,7 @@
 		- `fixed` -> *viewport*
 		- `absolute || fixed` -> *edge* da *padding box* de um ancestral mais próximo que tiver algumas propriedades **especiais** definidas.
 - Calculando valores em porcentagens a partir do contaning block:
-	- propriedades de deslocamento e do box-model calculam o **computed value** a partir do containg block:
+	- propriedades de deslocamento e do box-model calculam o **computed value** a partir do containing block:
 	  - **height**, **top**, **bottom** -> **height**.
 	  - **width**, **left**, **right**, **margin** e **padding** -> **width**.
 
@@ -18,3 +18,4 @@
 1. Escreva um algoritmo que identifique o containing block de uma caixa numa estrutura imaginária.
 2. O que é o containing block?
 3. Como as porcentagens das propriedades do box model, `width` e height, e as propriedades de offset são calculadas?
+4. O que é o initial containing block?

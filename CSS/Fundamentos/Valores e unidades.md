@@ -22,7 +22,10 @@
 - Tipo de unidade de comprimento:
   - Absoluto: Não é relativo.
   - Relativo: É relativo a outro valor.
-    - `em`: Relativo a fonte do elemento pai (no caso em um contexto tipográfico) ou relativo ao tamanho da fonte do próprio elemento em outros casos. Exemplo: `1.5em`, ou seja, 1.5 vezes o tamanho da fonte do elemento pai.
+    - `em`:
+      - Relativo a fonte do elemento pai (em um contexto tipográfico, por exemplo `font-size`) ou
+      - relativo ao tamanho da fonte do próprio elemento em outros casos (como a propriedade `width`).
+      -  Exemplo: `1.5em`, ou seja, 1.5 vezes o tamanho da fonte do elemento pai.
     - `rem`: Relativo a fonte do elemento raiz.
 
 ### Porcentagens

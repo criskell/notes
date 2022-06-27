@@ -62,7 +62,7 @@
 
 - *Um* usuário possui *muitos* posts. *Muitos* posts possuem *um* usuário.
 
-- `db.ForeignKey(key)`: Cria uma chave estrangeira para a tabela antes do ponto em `key` que referencia a coluna depois do ponto.
+- `db.ForeignKey(key)`: Cria uma chave estrangeira para a tabela antes do ponto em `key`, que referencia a coluna depois do ponto.
 
 - `db.relationship(model, backref=backref, lazy=lazy)`:
 

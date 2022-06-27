@@ -26,8 +26,7 @@
   - Se for executado via nome de arquivo: `__package__ = None`
 
 - `__name__`:
-
-  - Nome do módulo completo utilizado na importação.
+- Nome do módulo completo utilizado na importação.
 
 ## Execução
 
@@ -41,7 +40,7 @@
   - A variável global `__name__` é alterada para `__main__`.
   - Casos de uso:
     - Executar qualquer módulo no caminho de busca de módulos e não apenas no diretório atual, por exemplo: quando não sabe o caminho exato do módulo.
-    - Utilizar a correta versão do PIP.
+    - Utilizar a correta versão do PIP: `python3.10 -m pip`
 
 ## Caminho de busca dos módulos
 
@@ -69,7 +68,7 @@
   from pacote import modulo
   ```
 
-- Ao importar um **nome** (submódulo, subpacote, função, variável e classe) de um pacote com a cláusula `from`, primeiro o interpretador verifica se este nome está **definido no pacote**, caso contrário irá tentar **carregar** um módulo com este nome.
+- Ao importar um **nome** (submódulo, subpacote, função, variável e classe, etc.) de um pacote com a cláusula `from`, primeiro o interpretador verifica se este nome está **definido no pacote**, caso contrário irá tentar **carregar um módulo** com este nome.
 
 - Nesta variação, não informamos o **prefixo do pacote**, por exemplo: `modulo.funcao()`.
 

@@ -13,18 +13,15 @@
 
 ## URLs
 
-- URLs são strings que especifica como um recurso pode ser acessado na Internet
+- URLs são strings que especifica como um recurso pode ser acessado
 - O caminho é utilizado na URL para localizar um arquivo no sistema de arquivos
-  - Para arquivos no mesmo diretório: `arquivo.html`
-  - Arquivos em diretório superior: `../arquivo.html`
-  - Arquivos em outro diretório: `diretorio/arquivo.html`
 - Estrutura de diretórios:
   - **Raiz** é onde tudo reside.
 - Tipos:
   - Absoluta:
-    - Aponta para um local definido por sua posição absoluta
+    - Aponta para um recurso definido por sua posição absoluta
   - Relativo:
-    - Aponta para um local relativo ao próprio documento que está vinculando.
+    - Aponta para um recurso relativo ao próprio documento que está vinculando
 
 ## Fragmentos de documentos
 
@@ -33,14 +30,13 @@
 
 ## Boas práticas
 
-- Utilizar um texto claro e acessível, por exemplo: `Baixe o TS` ao invés de `Clique aqui` pois:
+- Utilizar um texto claro, curto e acessível, por exemplo: `Baixe o TS` ao invés de `Clique aqui` pois:
   - SEO: Palavra-chave
   - Acessibilidade:
     - Leitores de telam pulam de link em link, sem ler o contexto do link
   - Os links destacados são atraídos pelos usuários
 - Não colocar a URL no próprio texto do link
 - Não dizer "link para" no texto do link
-- Texto em links devem ser curtos
 - Não criar links para outros lugares com o mesmo texto
 - Indicar que está vinculando um recurso que não é HTML e adicionar palavras-chaves para reduzir confusões. Por exemplo: "Abrir documento Word (PDF, 10mb)"
 - Utilizar o atributo `download` quando estiver vinculando arquivos que devem ser baixados

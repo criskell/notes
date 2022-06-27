@@ -41,9 +41,11 @@
 - `box-sizing: content-box` (este é o modelo de caixa padrão):
   - `width` e `height` controla a **caixa de conteúdo**.
   - A largura total da caixa é conteúdo + preenchimento + borda e a mesma coisa pra altura.
+  - podemos pensar que ao adicionar `padding || border` numa caixa com dimensionamento extrínsico, irá esticar a caixa para além da largura/altura especificada
 - `box-sizing: border-box `(este é o modelo de caixa alternativo):
   - `width` e `height` controla o tamanho da caixa visível (da borda até o conteúdo).
   - A largura total é especificada pelo `width` e altura pelo `height`.
+  - padding e height passam a não aumentar a largura total da caixa
 
 ## Colapso de margem
 

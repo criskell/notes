@@ -9,5 +9,5 @@
   - `img { max-width: 100%; }`: A largura intrísica da imagem não ultrapassará a largura do bloco pai.
 - Unidades da viewport:
   - Viewport: Área visível no navegador.
-  - vw: Unidade relativa a 1% da largura da viewport.
-  - vh: Unidade relativa a 1% da altura da viewport.
+  - vw: 1 unidade = a 1% da largura da viewport.
+  - vh: 1 unidade = a 1% da altura da viewport.

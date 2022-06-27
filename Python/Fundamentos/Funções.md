@@ -43,7 +43,11 @@ exemploFuncao(1, nomeDoArgumento=valor)
 
 ## Parâmetros especiais
 
-- Os tipos de parâmetros podem serem somente posicional, posicional ou nomeado ou somente nomeado.
+- Os tipos de parâmetros podem serem
+  - somente posicional
+  - posicional ou nomeado
+  - somente nomeado
+
 - Podemos especificar o tipo de parâmetro para os argumentos serem passados **somente-posição** ou **somente-nome** utilizando os símbolos `/` e `*`.
 - Se não especificados, os argumentos poderão ser passados por **nome ou posição**.
 

@@ -1,7 +1,5 @@
 # Estrutura de dados
 
-- Para utilizar pilhas podemos utilizar o tipo lista e para utilizar filas podemos utilizar a classe collections.deque.
-
 ## Compreensão de lista
 
 - Compreensão de lista permite criar uma lista com base em algum outro iterável, permitindo mapeamento e filtramento.
