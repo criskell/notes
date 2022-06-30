@@ -1,0 +1,21 @@
+# Elementos de seccionamento
+
+- Elementos destinados a agrupar conteúdos.
+- `header`:
+  - Cabeçalho para um documento ou seção, que define um conteúdo introdutório.
+- `section`:
+  - Representa uma parte da página de um único tema ou funcionalidade.
+- `article`:
+  - Representa uma parte da página que pode ser distribuível e reutilizável.
+  - Deve fazer sentido por si só, independentemente do resto do site.
+- `aside`:
+  - Representa um conteúdo que não é diretamente relacionado ao fluxo do texto do conteúdo circundante, mas ainda sim está ligado de alguma forma.
+  - Um conteúdo adicional/de apoio.
+  - Exemplos:
+    - Barra lateral ao conteúdo principal.
+- `nav`:
+  - Links de navegação.
+- `footer`:
+  - Rodapé da página.
+  - Casos de usos:
+    - Informações de direitos autorais.

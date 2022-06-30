@@ -1,4 +1,11 @@
-# Unidades de tamanho
+# Unidades de medida
+
+## Tipos de unidades
+
+- Absoluta:
+  - Nenhum fator é considerado para computar o valor final.
+- Relativa:
+  - Fatores são considerados para computar o valor final.
 
 ## Números
 

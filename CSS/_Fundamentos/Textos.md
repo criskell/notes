@@ -186,6 +186,41 @@
   - destaque o link, por exemplo, utilizando sublinhado
   - destaque o link quando estiver no estado de hover ou focado. Já para quando está ativado, destacar de uma forma diferente.
 
+## Fontes da web
+
+- Fontes da web são fontes que são baixadas junto com o site, personalizadas.
+
+- Utilizamos a regra `@font-face` e mais tarde selecionamos esta fonte no `font-family`:
+
+  - ```css
+    @font-family {
+        /* na propriedade src, especificamos uma lista de fontes, onde o navegador irá usar a primeira fonte na lista que consiga usar. ou seja, as fontes em formatos preferidos e modernos devem vir primeiro */
+        src: url('URL DA FONTE1') format('truetype'), url('URL da FONTE2') format('opentype'), url('URL da fonte 3') format('woff');
+        font-family: 'nome da fonte'; /* aqui especificamos o nome da família de fontes */
+    }
+    ```
+
+  - O `format` especifica o formato da fonte. É opcional, mas ajuda o navegador a ser mais rápido para escolher um formato de fonte.
+
+  - `font-family` é o nome da fonte.
+
+  - propriedades `font-style`, `font-weight` permite especificar o estilo/peso especifíco da fonte em que está importando.
+
+- O formato recomendável é o WOFF2.
+
+- TTF, SVG e EOT são formatos antigos e legados.
+
+- Serviços:
+
+  - Distribuidora de fontes gratuitas:
+    - Fornecem arquivos de fontes para download.
+    - Exemplos: FontSquirrel
+  - Fontes pagas:
+    - Exemplos: MyFonts
+  - Serviços de fontes online:
+    - Cuidam do armazenamento e da disponibilização de fontes.
+    - Exemplos: Google Fonts
+
 ## Exercícios
 
 1. Das propriedades de manipulação de texto nas CSS, podemos classificar em dois grandes grupos. Quais são?

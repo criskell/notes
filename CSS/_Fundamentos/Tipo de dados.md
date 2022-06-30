@@ -1,4 +1,4 @@
-# Valores e unidades
+# Tipo de dados
 
 - Um tipo de valor (ou tipo de dados) é uma coleção de valores permitidos.
 - Tipos dos tipos de dados:
