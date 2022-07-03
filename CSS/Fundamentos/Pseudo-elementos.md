@@ -1,0 +1,25 @@
+# Pseudo-elementos
+
+- Pseudo-elementos são adicionados num seletor para direcionar partes de um elemento como se fossem elementos inseridos diretamente no HTML.
+- É como se adicionasse mais elementos.
+- `::before`:
+  - Cria um novo elemento no início de um *container*.
+  - Somente será criado se alterar `content`
+  - Se inserir `url()` no content, uma imagem será carregada.
+- `::after`:
+  - Mesma coisa acima, mas o novo elemento será inserido no final.
+- `::first-line`:
+  - Direciona a primeira linha do texto.
+  - Há restrições de propriedades.
+- `::first-letter`:
+  - Direciona a primeira letra do texto.
+  - Há restrições de propriedades.
+- `::marker`:
+  - Direciona um marcador, por exemplo, um marcador de uma lista.
+  - Há restrições de props.
+  - Podemos customizar o símbolo do marcador com a propriedade `content`
+- `::selection`:
+  - Permite direcionar a seleção do usuário sobre o texto de um elemento.
+- `::placeholder`:
+  - Permite direcionar o placeholder do elemento.
+  - Há restrições de props.

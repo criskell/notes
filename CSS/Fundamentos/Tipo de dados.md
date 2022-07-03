@@ -19,18 +19,13 @@
 
 - `<length>` é para comprimentos
 - Valores `<dimension>` que referem-se a distâncias.
-- Tipo de unidade de comprimento:
-  - Absoluto: Não é relativo.
-  - Relativo: É relativo a outro valor.
-    - `em`:
-      - Relativo a fonte do elemento pai (em um contexto tipográfico, por exemplo `font-size`) ou
-      - relativo ao tamanho da fonte do próprio elemento em outros casos (como a propriedade `width`).
-      -  Exemplo: `1.5em`, ou seja, 1.5 vezes o tamanho da fonte do elemento pai.
-    - `rem`: Relativo a fonte do elemento raiz.
 
 ### Porcentagens
 
 - Indica uma fração em relação a outro valor.
+- Ao que é referido:
+  - Na propriedade `width`, `margin` e `padding`: Na largura do container pai.
+  - Na função `transform`: É referido a largura do elemento.
 
 ## Cor
 
