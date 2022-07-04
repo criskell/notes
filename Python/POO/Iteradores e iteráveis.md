@@ -1,6 +1,5 @@
 # Iteradores e iteráveis
 
-- Iteração é pegar um item, um após o outro, de algo.
 - Iterável é um objeto capaz de retornar um item de cada vez. Possui um método `__getitem__` ou `__iter__`, que retorna um iterador.
 - Iterador:
   - Representa um fluxo de dados

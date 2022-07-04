@@ -27,7 +27,7 @@
 ## Preenchimento
 
 - É o espaçamento ao redor da borda e conteúdo.
-- Fica *dentro* da caixa, portanto, é afetado por props. como `background`
+- Fica *dentro* da caixa e é transparente, portanto, é afetado por props. como `background`
 - É adicionado às dimensões da caixa, por padrão
 
 ## Conteúdo
