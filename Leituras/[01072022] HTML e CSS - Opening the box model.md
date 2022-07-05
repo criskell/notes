@@ -26,4 +26,55 @@
 - O núcleo da caixa é determinado pela altura e largura de um elemento, determinado `width` / `height`, conteúdo ou `display`
 - O preenchimento e as bordas estendem as dimensões da caixa para fora da largura e altura do elemento
 - O modelo de caixa padrão é aditivo, assim para determinar o tamanho real da nossa caixa levamos em consideração o preenchimento, as bordas e as margens.
-- Parei no "So far a lot of these properties might not make a whole lot of sense, and that’s all right. To clarify things, let’s take a close look at all of the properties—`width`, `height`, `padding`, `border`, and `margin`—that go into forming the box model."
+
+## Largura e altura
+
+- Cada elemento possui uma largura e altura padrão
+- A largura padrão depende do `display`
+- A altura padrão de um elemento depende de seu conteúdo
+
+## Margens e preenchimento
+
+- Margens:
+  - É o espaço ao redor de um elemento
+  - Está *fora* de um elemento
+  - É transparente
+  - Casos de uso:
+    - Para fazer elementos respirarem
+    - Para posicionamento
+- Preenchimento:
+  - É o espaço entre a borda e conteúdo
+  - Está dentro de um elemento
+  - É transparente
+- No caso de inline-level,
+  - as margens e preenchimentos horizontais são aplicadas e afastam os elementos
+  - os preenchimentos verticais possuem um efeito visível na tela, mas não afastam outros elementos, podendo sobrepor a outros elementos
+  - margens verticais não funcionam
+
+## Bordas
+
+- Delimitam um elemento
+- Cada borda possui
+  - largura
+  - estilo
+  - cor
+- Shorthand `border: largura estilo cor`, mesma sintaxe para `border-[top|right|bottom|left]`
+- Podemos ser mais específicos, utilizando `-style`, `-width` ou `-color`
+
+### Raio da borda
+
+- `border-radius`: cantos de um elemento arredondados
+
+- identifica o raio de arredondamento em cada canto
+
+- sintaxe:
+
+  - ```css
+    border-radius: <todos os lados>;
+    border-radius: <top-left + bottom-right> <top-right bottom-left>
+    border-radius: <top-left> <top-right> <bottom-right> <bottom-left>
+    ```
+
+- Longhands:
+
+  - `border-[top|bottom]-[left|right]-radius`
