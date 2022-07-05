@@ -26,12 +26,20 @@
     - Absolutos: São comprimentos por si só.
     - Relativos: É calculado em relação a um valor base que pode mudar.
     - As unidades absolutas são comparadas com um valor base que não pode mudar e unidades relativas são comparadas com um valor base que pode mudar.
-  - Unidades relativas a fontes:
-    - `em`: Relativo ao tamanho computado da fonte do elemento pai ou do elemento atual.
-    - `rem`: Relativo ao tamanho da fonte do elemento raíz.
-  - Unidades relativas a viewport:
-    - `vw`: 1% da largura da viewport.
-    - `vh`: 1% da altura da viewport.
+  - Unidades absolutas de comprimento:
+    - `pt`: não é recomendado para uso em tela
+  - Unidades relativas de comprimento:
+    - Unidades relativas a fontes:
+      - `em`:
+        - Relativo ao tamanho computado da fonte do elemento pai ou do elemento atual.
+        - Utilizar esta unidade no preenchimento e margem ajuda a manter um ritmo vertical, pois ao redimensionar a fonte, é dimensionada proporcionalmente
+      - `rem`:
+        - Relativo ao tamanho da fonte do elemento raíz.
+      - `ch`:
+        - Relativo ao tamanho do caractere '0'.
+    - Unidades relativas a viewport:
+      - `vw`: 1% da largura da viewport.
+      - `vh`: 1% da altura da viewport.
 
 ## Outras unidades
 
