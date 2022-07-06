@@ -30,17 +30,19 @@
 ## Box-sizing
 
 - Controla o dimensionamento das caixas.
+
 - Modelo de caixa padrão:
   - as propriedades `width/height` dimensionam o conteúdo e não o elemento como um todo
   - bordas e preenchimentos são somadas a largura e altura e aumentam as dimensões do elemento
+  
 - `content-box`:
   
   - `width` e `height` controla a **caixa de conteúdo**
   - A largura total da caixa é conteúdo + preenchimento + borda e a mesma coisa pra altura.
   - podemos pensar que ao adicionar `padding || border` numa caixa com dimensionamento extrínsico, irá esticar a caixa para além da largura/altura especificada
-  - a largura/altura inclui apenas o conteúdo 
+  - a largura/altura inclui apenas o conteúdo e não considera borda e padding
   - padding + border são adicionadas ao tamanho inicial.
-  - 
+  
 - `border-box`:
   
   - `width` e `height` controla o tamanho da caixa visível (da borda até o conteúdo).
@@ -49,6 +51,7 @@
   - resulta no padding + border diminuindo o conteúdo a partir do tamanho definido
   - padding e height passam a não aumentar a largura total da caixa
   - Isso incluirá todas as bordas e preenchimentos nas dimensões originais que você definiu.
+  - o tamanho especificado leva em conta até a borda
   
   
 

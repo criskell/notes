@@ -1,2 +1,0 @@
-# Classificação de caixas
-
