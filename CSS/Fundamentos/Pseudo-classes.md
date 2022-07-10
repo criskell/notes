@@ -5,8 +5,15 @@
 ## Estados interativos
 
 - `:hover`: quando um dispositivo que possui um ponteiro está sobre o elemento
-- `:active`: quando o elemento está interagindo ativamente, como um clique
-- `:focus`: quando o elemento está focado, por exemplo, ao utilizar a tecla `tab`
+- `:active`:
+  - quando o elemento está interagindo ativamente, como um clique
+  - ao clicar no botão, o botão estará no estado `:active:focus`, caso seja focalizável
+
+- `:focus`:
+  - quando o elemento está focado
+  - o elemento está selecionado para receber entradas
+  - por exemplo, ao utilizar a tecla:`tab`
+
 - `:focus-within`: quando o elemento possui um filho que está em foco
 - `:focus-visible`:
   - quando o elemento corresponde ao `:focus` e o navegador decide que a indicação de foco **deve** ser exibido (por exemplo, ao utilizar o teclado via tab)

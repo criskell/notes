@@ -1,5 +1,4 @@
 # O modelo de caixa
 
-- Descreve as caixas do CSS.
-- Cada elemento na árvore gera uma ou mais caixas.
-
+- Quando um navegador renderiza um documento, cada elemento irá ser representado por 0 ou N caixas
+- O modelo de caixa descreve as caixas, que são áreas retangulares
