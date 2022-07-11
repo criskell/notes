@@ -12,8 +12,8 @@ Controlando o estouro (conteúdo que vaza):
   - permite scroll apenas via JS
   - estabelece um BFC
 - `scroll`:
-  - o conteúdo é recortado para caber na padding box
-  - aparece um scoll para visualizar o estouro, mesmo que o conteúdo não seja recortado.
+  - o conteúdo é cortado para caber na padding box
+  - aparece um scoll para visualizar o estouro, mesmo que o conteúdo não seja cortado.
   - estabelece um BFC
 - `auto`:
   - aparece o scroll somente se for necessário
