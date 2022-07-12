@@ -34,6 +34,21 @@
   - Atributo `lang` no elemento `html`: Altera a **linguagem primária do documento**, permitindo que a página seja indexada mais facilmente e ajudando na acessibilidade.
   - Podemos utilizar este atributo em outras partes do documento, para marcar diferentes conteúdos com uma linguagem diferente da principal.
 
+## Elemento meta
+
+- Representa metadados que não são representados por outros elementos.
+- O tipo de metadado depende dos atributos:
+  - Se definir `name`, será metadados em nível do documento
+  - `http-equiv`:
+    - é uma diretiva pragma, ou seja, fornece informações como cabeçalhos HTTP, mas com nomes um pouco diferentes
+    - pode alterar o comportamento dos servidores e o navegador
+  - `charset`, é uma declaração do charset
+- Atributos:
+  - `http-equiv`:
+    - Define uma diretiva pragma.
+    - Valores:
+      - `content-type`: tipo mime + charset
+
 ## Perguntas de revisão
 
 1. O que é o **head**?

@@ -15,7 +15,7 @@
 - `column-rule`:
 	- Regras entre colunas.
 	- É como a propriedade `border`, possui estilo, largura e cor
-	- Fica dentro das colunas
+	- Fica dentro das lacunas
 - `column-span`:
 	- `all`: Estende um elemento em todas as colunas. O conteúdo continuará após o elemento.
 

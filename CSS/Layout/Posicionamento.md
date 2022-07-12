@@ -35,7 +35,17 @@
 
 - Determina a real localização de um elemento no documento
 - `top`:
-  - 
+  - `position: absolute / fixed`:
+    - distância entre a *margin edge* do topo do elemento da *edge* do containing block
+  - `position: relative`:
+    - distância em que a *top edge* de um elemento é movida abaixo da sua posição original
+  - se forem definidas `top / bottom` e a altura não está especificada (ou auto ou 100%) e o elemento está *absolutamente posicionado*, então tais propriedades são respeitadas
+  - em outros casos, caso a altura esteja *restringida* ou `position = relative`, `bottom` é ignorado
+- `bottom`:
+  - `position: absolute / fixed`:
+    - distância entre o lado inferior da *outer edge* do elemento e o lado inferior da *edge* do containing block
+  - `position: relative`
+    - distância em que o lado inferior da *edge* do elemento é movido acima de sua posição normal
 - Depende da `position`:
   - `static`: não funciona
   - `relative`:

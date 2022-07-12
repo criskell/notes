@@ -61,10 +61,6 @@
 - `br`: Quebra de linha
 - `hr`: Denota uma mudança temática no texto e não apenas uma borda
 
-
-
-
-
 ## Planejando um site
 
 - Arquitetura de informação:

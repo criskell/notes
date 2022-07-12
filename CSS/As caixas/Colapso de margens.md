@@ -15,7 +15,7 @@
     - Se não houver separação entre a descendente e a pai, haverá colapso
     - `margin-top` de descendentes são colapsadas com `margin-top` do pai, se não houver `border`, `padding`, conteúdo inline, BFCs e limpeza de floats os separando.
     - `margin-bottom` de descendentes são colapsadas com `margin-bottom` do pai se não houver `border`, `padding`, conteúdo inline, `min-/height` os separando.
-    - Margens sempre tentam aumentar a distância entre irmãos (diferente do `padding`, que pode ser utilizado para aumentar a lacuna entre pai/filho). Mesmo que isso signifique ser transferida (e recolhida) para o pai, em algumas condições:
+    - Margens sempre tentam aumentar a distância entre irmãos (diferente do `padding`, que pode ser utilizado para aumentar a lacuna entre pai/filho). Mesmo que isso signifique ser transferida (e recolhida) para o pai, em algumas condições
     - A margem fica fora da caixa pai.
     - Exceto:
       - floats

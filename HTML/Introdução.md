@@ -73,9 +73,19 @@
 
 ## Referências de entidades
 
+- Também chamadas de entidades e referências de caracteres
 - Referências de entidades representam um caractere.
 - Começa com `&` e termina com `;`.
+- Podemos ter um número, `&#xNUMERO`;
 - Exemplo: `&nbsp;`
+- Casos de uso:
+  - Exibir caracteres reservados
+  - Mostrar caracteres difíceis de digitar 
+
+- Algumas:
+  - `&nbsp`: Espaço sem quebra. Pode ser utilizado para juntar 2 palavras que sempre ficam juntas, exemplo: `R$&nbsp;35`
+  - `&amp`: para `&`
+
 
 ## Questões
 
