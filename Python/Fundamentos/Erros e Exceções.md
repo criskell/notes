@@ -68,9 +68,8 @@
 ## Levantando exceções
 
 - A declaração `raise` permite levantar uma exceção.
-- O argumento da instrução `raise` indica a exceção. Pode ser uma instância de exceção ou uma classe de exceção.
-- Caso uma classe for passada, a classe será instanciada invocando o construtor sem argumentos.
-- Uma instrução `raise` dentro de uma cláusula de exceção permite levantar a exceção novamente.
+- O argumento da instrução `raise` indica a exceção. Pode ser uma instância ou classe.
+- Uma instrução `raise` sozinha dentro de uma cláusula de exceção permite levantar a exceção novamente.
 
 ## Encadeamento de exceções
 
