@@ -61,4 +61,4 @@
   - A caixa tem dimensões fixas controladas pelo autor
   - Há um limite de quanto conteúdo pode adicionar antes saia dos limites da caixa
 - Intrísinco:
-  - A caixa é dimensionada de acordo com a quantidade de conteúdo
+  - A caixa é dimensionada de acordo com a quantidade de conteúdo, sem levar em consideração o contexto
