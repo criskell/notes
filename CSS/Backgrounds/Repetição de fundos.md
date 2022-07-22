@@ -1,0 +1,23 @@
+# Repetição de fundos
+
+- Controla como deve ser feita a repetição de fundos.
+- Sintaxe de um valor:
+  - `repeat-x -> repeat no-repeat`
+  - `repeat-y -> no-repeat repeat`
+  - `repeat -> repeat repeat`
+  - `space -> space space`
+  - `round -> round round`
+  - `no-repeat -> no-repeat no-repeat`
+- Sintaxe de dois valores admite um valor para o eixo horizontal e um valor para o eixo vertical:
+  - `no-repeat`: Não é repetida
+  - `repeat`:
+    - A imagem é repetida
+    - Por haver recortes
+  - `space`:
+    - A imagem é repetida
+    - Tentará não ter recortes
+    - Se várias imagens caber, as imagens serão espalhadas de maneira uniforme
+  - `round`:
+    - Repetida
+    - Tentará não ter recortes
+    - Os fundos pode ser esticado ou esprimido

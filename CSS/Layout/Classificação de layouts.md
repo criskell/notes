@@ -46,6 +46,11 @@
 - Contras:
   - Difícil de implementar
 
+## Layout híbrido
+
+- Combina o layout fixo, fluído e elástico.
+- Por exemplo, dimensionar um elemento em pixeis e o resto dos elementos em unidades `em` ou `%`
+
 ## Layout adaptável
 
 - Um layout fixo em várias versões

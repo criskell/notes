@@ -56,11 +56,6 @@
 - `div`: Elemento não-semântico de nível de bloco
 - `span`: Elemento semântico de nível inline
 
-### Quebras de linhas e linhas horizontais
-
-- `br`: Quebra de linha
-- `hr`: Denota uma mudança temática no texto e não apenas uma borda
-
 ## Planejando um site
 
 - Arquitetura de informação:

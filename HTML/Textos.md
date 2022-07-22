@@ -7,6 +7,7 @@
 - A maioria dos textos estruturados possuem parágrafos e títulos.
 - Parágrafos:
   - Criados com um elemento `p` envolvendo um conteúdo.
+  - A tag final pode ser omitida em alguns casos.
 - Títulos:
   - Representados por `h(1-6)`
   - Cada elemento começa um conteúdo de nível diferente.
@@ -14,6 +15,7 @@
   - Dicas para criar estruturas hierárquicas:
     - Um `h1` por página.
     - Utilizar os títulos corretos para representar certo nível de conteúdo. Por ex.: h2 para representar sub-títulos e h3 para representar subtítulo do h2 (correto) h2 para representar sub-sub-títulos e h3 para sub-títulos
+    - Pular títulos: `<h1> <h3> <h6>` (código incorreto)
     - Máximo três níveis por página
 - Por que utilizar marcação estrutural para textos:
   - Os usuários buscam geralmente conteúdos na página por títulos (índice).
@@ -72,10 +74,19 @@
 
 ## Citações
 
-- `blockquote`: Citações em bloco são seções retiradas de conteúdo de nível de bloco (citações estendidas).
-- `q`: Citações em linha são citações curtas.
-- Atributo `cite`: Indica a fonte da citação
-- Elemento `cite`: Título da fonte da citação.
+- `blockquote`:
+  - Citações em bloco são seções retiradas de conteúdo de nível de bloco (citações estendidas).
+
+- `q`:
+  - Citações em linha são citações curtas, no meio do texto.
+
+- Atributo `cite` nos elementos `q` e `blockquote`:
+  - Indica a fonte da citação por uma URL
+
+- Elemento `cite`:
+  - Título do trabalho citado, como o nome de um livro, jogo, etc.
+  - Pode ser usado dentro de um `blockquote`
+
 
 ## Abreviações
 
@@ -85,23 +96,52 @@
 
 - O elemento `address` envolve informações de contato (telefones, endereço residencial e etc.)
 - Sobre o elemento `article` ou `body` mais próximo.
+- Pode ser colocado por exemplo num `footer` de um `article`.
 
 ## Sobrescrito e Subscrito
 
+- Utilizar somente para conveções tipográficas.
 - Casos de uso: Marcar datas, fórmulas químicas, equações e etc. para que tenham o significado correto.
 - `sup`: Sobrescrito
 - `sub`: Subscrito
 
 ## Códigos
 
-- `code`: Marcar códigos genéricos
-- `pre`: Marcar código que deve ter seus espaços em branco preservados, do mesmo jeito que está no código da página
+- `code`:
+  - Marcar códigos genéricos
+  - Pequenos trechos de códigos. Para mostrar várias linhas utilize dentro de um `<pre>`
+
+- `pre`:
+  - Texto pré-formatado
+  - Marcar código que deve ter seus espaços em branco preservados, do mesmo jeito que está no código da página
+
 - `kbd`: Para marcar entrada do teclado **inserida**.
 - `samp`: Para marcar a saída de um programa (**samp**le).
 
 ## Data e hora
 
 - O elemento `time` permite marcar data/hora num formato legível por máquina (acessado via o atributo `datetime`).
+
+## Quebras de linhas e linhas horizontais
+
+- `br`:
+  - Quebra de linha
+  - Utilizar quando a quebra de linha é significativa (como um poema e endereços)
+- `hr`:
+  - Denota uma quebra temática no texto e não apenas uma linha horizontal (semântico)
+  - Exemplos:
+    - Mudança de tópico
+
+## Texto inserido, marcado e deletado
+
+- `ins`: Representa intervalo de texto que foi inserido ao documento.
+- `del`: Representa intervalo de texto que foi deletado do documento.
+- `mark`:
+  - Representa um texto marcado/destacado
+  - Possui fins de referência/notação
+  - Possui relevância
+  - Difere do strong: grau de *relevância* e não de importância
+- `s`: Coisas que não são relevantes nem mais precisas.
 
 ## Exercícios
 
@@ -117,3 +157,7 @@
 10. Como representar listas de descrições?
 11. Como utilizar subscrito e sobrescrito?
 12. Como utilizar abreviações?
+13. Qual é a diferença entre strong e mark?
+14. O que é o elemento mark?
+15. Como representar textos não precisos ou não relevantes semanticamente?
+16. Ao que o elemento `address` se refere?

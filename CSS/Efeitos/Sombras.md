@@ -3,7 +3,7 @@
 ## box-shadow
 
 - Cria uma sombra ao redor da caixa (ou dentro).
-- A forma da sombra é afeta por propriedades como `border-radius`
+- A forma da sombra é afetada por propriedades como `border-radius`
 - `inset`: uma palavra-chave para a sombra ficar para dentro
 - Recebe 4 valores:
   - Deslocamento horizontal: se for positivo, irá ser empurrada da esquerda. caso seja negativa, irá ser empurrada da direita

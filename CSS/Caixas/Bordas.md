@@ -30,14 +30,15 @@
 
 - Arredondamos cantos da caixa com `border-radius`
 - Sintaxe:
-- ```css
-border-radius: <todos-os-cantos>;
-border-radius: <top-left + bottom-right> <top-right + bottom-left>;
-border-radius: <top-left> <bottom-left + top-right> <bottom-right>;
-border-radius: <top-left> <top-right> <bottom-right> <bottom-left>;
-```
+    - ```css
+    border-radius: <todos-os-cantos>;
+    border-radius: <top-left + bottom-right> <top-right + bottom-left>;
+    border-radius: <top-left> <bottom-left + top-right> <bottom-right>;
+    border-radius: <top-left> <top-right> <bottom-right> <bottom-left>;
+    
 - Podemos especificar cantos específicos com `border-<canto>-radius`
-- Cada canto irá admitir 2 valores, um para o raio no sentido horizontal e para o outro no sentido vertical. Na `border-radius` especificamos com `/`.
+- Cada canto irá admitir 2 valores, um para o raio no sentido horizontal e para o outro no sentido vertical. Na `border-radius` especificamos com `/`. Permite criar elipses.
+- Porcentagens no eixo horizontal se referem à largura e porcentagens referentes ao eixo vertical se referem à altura.
 
 ## Bordas customizadas
 - `border-image`

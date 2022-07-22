@@ -11,7 +11,7 @@
   - Se algum teste falhar numa camada, todas as camadas acima não precisam ser executadas
 - Os testes de unidades devem estar em maior número e formar a base da pirâmide
 
-## Tipos de testes
+## Níveis de teste
 
 - Teste de aceitação:
   - Verifica se todo o projeto funciona como um todo
@@ -19,6 +19,7 @@
 - Testes de integração:
   - Componentes são combinados e testados coletivamente
   - Antes dos testes de aceitação e depois dos testes unitários
+  - Testar uma funcionalidade conjunta
 - Testes de sanidade:
   - Se a aplicação está respondendo ou não.
 - Testes de unidade:

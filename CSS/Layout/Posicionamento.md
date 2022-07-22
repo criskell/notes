@@ -24,8 +24,10 @@
 - `sticky`:
 
   - É posicionado `relative` até que atinja um limite, a partir do qual se torna `fixed`
-
-  - São "sticky" (pegajosos) relativos a um elemento ancestral mais próximo com um mecanismo de rolagem
+  - Fica fixo quando chegar uma distância específica de uma extremidade de algo, como a viewport, enquanto estiver dentro do elemento pai. Quando a viewport atinge a borda oposta do pai, se torna relativo. Basicamente, cola no elemento pai.
+  - Só pode flutuar sobre elementos irmãos.
+  - Um *sticky item* é um elemento com `position: sticky` e o *sticky container* é o pai dele. O container é a área máxima em que o item pode flutuar.
+  - No final do container, o elemento para e fica como `position: absolute`, se empilhando sobre o outro elemento.
 
 
 ## Contextos de posicionamento
