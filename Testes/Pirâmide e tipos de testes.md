@@ -21,6 +21,7 @@
   - Antes dos testes de aceitação e depois dos testes unitários
 - Testes de sanidade:
   - Se a aplicação está respondendo ou não.
-- Unitário:
-  - Testamos a menor parte testável chamada de unidade (geralmente um método)
+- Testes de unidade:
+  - Testa a menor parte testável chamada de unidade (geralmente um método)
+  - Testa a unidade isoladamente de outras dependências geralmente através de simulações destas
   - Devem serem independentes de outros testes e executarem rápidos
