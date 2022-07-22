@@ -11,11 +11,10 @@
 - A largura e altura especificados para uma imagem devem atender a proporção da imagem, caso contrário ela será comprimida ou esticada.
 - A propriedade `object-fit` especifica como o conteúdo de um elemento substituído como imagens devem ser redimensionado para preencher um container. Possíveis valores:
   - `fill`:
-    - A imagem será redimensionada para se encaixar na proporção  do container
+    - A imagem será redimensionada para se encaixar na proporção do container
     - Se as proporções não corresponderem, ela será esticada ou comprimida
   - `contain`:
-    - A imagem será redimensionada de acordo com a proporção do container.
-    - Se as proporções não corresponderem, a imagem será colocada numa espécie de letterbox.
+    - A imagem será redimensionada de acordo com a proporção do container. Se as proporções não corresponderem, a imagem será colocada numa espécie de letterbox.
     - A imagem inteira será colocada
   - `cover`:
     - A imagem será redimensionada para se encaixar na proporção do container. Se as proporções não corresponderem, a imagem será cortada para encaixar.

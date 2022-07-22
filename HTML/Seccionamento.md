@@ -2,7 +2,11 @@
 
 - Elementos destinados a agrupar conteúdos.
 - `header`:
-  - Cabeçalho para um documento ou seção, que define um conteúdo introdutório.
+  - Representa um conteúdo introdutório para um documento ou seção.
+  - Exemplos do que pode conter:
+    - um logotipo
+    - nome do autor
+    - links de navegação
 - `section`:
   - Representa uma parte da página de um único tema ou funcionalidade.
 - `article`:
@@ -14,7 +18,9 @@
   - Exemplos:
     - Barra lateral ao conteúdo principal.
 - `nav`:
-  - Links de navegação.
+  - Fornecer links de navegação.
+  - Não precisar fornecer apenas uma lista, pode fornecer links em parágrafos.
+  - Nem sempre é necessário que todos os links devam estar neste elemento, geralmente somente os links principais de navegação. Por exemplo, não é necessário utilizar num elemento `footer`.
 - `footer`:
   - Rodapé da página.
   - Casos de usos:
