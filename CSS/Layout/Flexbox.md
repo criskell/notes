@@ -1,46 +1,45 @@
 # Flexbox
 
-- Flexbox é um modo de layout para posicionamento e dimensionamento de caixas **flexíveis**
+- Flexbox é um método de layout unidimensional para organizar itens em linhas e colunas
+- Itens são ditos flexíveis, ou seja, expandem ou encolhem para caber num certo espaço
 
-- O que permite?
+## Por que usar
 
-  - distribuição de espaço e alinhamento de conteúdo
-  - a largura e altura se adaptar de acordo com o dispositivo de exibição
-  - o container esticar ou comprimir itens
+- distribuição de espaço e alinhamento de conteúdo
+- a largura e altura se adaptar de acordo com o dispositivo de exibição
+- o container esticar ou comprimir itens
 
-  - alinhamento de itens na horizontal ou vertical
+- alinhamento de itens na horizontal ou vertical
 
-  ## Conceitos e terminologia
+## Modelo do Flexbox
 
-  ### Eixos flex
+### Eixos
 
-  - Os eixos flex determinam as direções flex ao longo das quais items flex são colocadas em um container.
-  - O eixo principal de um container é o eixo principal ao longo do qual itens são colocadas e se estende na *dimensão principal*.
-  - Itens são colocados iniciando no *main start* em direção ao *main end*.
-  - O tamanho de um item no eixo principal é chamado de *main size*. O tamanho de um item no eixo transversal é chamado de *cross size*. Os tamanhos, respectivamente, podem serem definidos por *largura* ou *altura*, ou vice-versa, dependendo de qual é a direção do eixo principal.
-  - O eixo transversal é o eixo perpendicular ao eixo principal e se estende na *dimensão traversal*.
-  - Linhas flex são colocadas iniciando na *cross start* até a *cross end*.
+- Os itens de um container flex são dispostos ao longo de dois eixos.
+- O eixo principal percorre a direção na qual itens são colocadas e se estende na *dimensão principal*. O início deste eixo é chamado de *main start* e o fim é chamado de *main end*.
+- O tamanho de um item no eixo principal é chamado de *main size*. O tamanho de um item no eixo transversal é chamado de *cross size*. Os tamanhos, respectivamente, podem serem definidos por *largura* ou *altura*, ou vice-versa, dependendo de qual é a direção do eixo principal.
+- O eixo transversal percorre perpendicularmente ao eixo principal e se estende na *dimensão traversal*.
+- Linhas flex são colocadas iniciando na *cross start* até a *cross end*.
 
-  ## Linhas flex
+## Linhas
 
-  - Linhas flex são linhas hipotéticas em que itens são colocados.
-  - Seguem o eixo principal e são empilhadas ao longo do eixo transversal.
+- Linhas flex são linhas hipotéticas em que itens são colocados.
+- Seguem o eixo principal e são empilhadas ao longo do eixo transversal.
 
-  ## Flex container
+## Flex container
 
-  -  É um elemento que recebeu um tipo de exibição interna como `flex` (ex.: `display: inline flex || inline-flex || block flex || flex`) e tornou seus filhos diretos em caixas flexíveis.
+-  É um elemento que recebeu um tipo de exibição interna como `flex` (ex.: `display: inline flex || inline-flex || block flex || flex`) e tornou seus filhos diretos em caixas flexíveis.
 
 ### Fluxo de um container
 
 - `flex-direction`:
-  - Define o fluxo de exibição dos itens.
+  - Determina a direção em que o eixo principal percorre.
   - `row`:
-    - Os itens são organizados em linhas da esquerda para a direita.
-    - O eixo principal é horizontal.
+    - Itens serão dispostos em linhas na direção do idioma.
   - `column`:
-    - Os itens são organizados em colunas um abaixo do outro.
-  - `row-reverse`: Igual ao `row`, mas da direita para esquerda
-  - `column-reverse`: Igual ao `column`, mas de baixo para cima
+    - Itens serão dispostos em colunas.
+  - `row-reverse`: Igual ao `row`, mas na direção inversa
+  - `column-reverse`: Igual ao `column`, mas na direção inversa
   
 - `flex-wrap`
   - Controla se o container é de única linha ou de múltiplas linhas.
@@ -80,9 +79,9 @@
     - Todos os espaçamentos, incluindo das extremidades, são distribuídos de forma igualitária
     - `--X--Y--Z--` (exemplo)
 - `align-items`:
-  - Alinhando itens ao longo do eixo transversal
+  - Controla onde os itens ficam ao longo do eixo transversal
   - `stretch` (padrão):
-    - Os itens preencheram todo o eixo transversal.
+    - Estica os itens para preencherem todo o container.
   - `flex-start`:
     - Serão alinhados a partir ao cross start da linha.
   - `flex-end`:
@@ -115,28 +114,25 @@
 
 - Cada item de um flex container é uma caixa flexível
 
-### flex-grow, flex-shrink e flex-basis
+### Dimensionamento de itens flexíveis
 
 - Essas propriedades auxiliam no tamanho dos itens flex e como o container irá lidar com sobra ou falta de espaço.
 - `flex-grow`:
   - especifica o fator de crescimento de um item
   - o padrão é 0, ou seja, não crescem, mesmo se tiver espaço sobrando
-
 - `flex-shrink`:
   - especifica o fator de redução de um item
   - quando falta espaço num container, os itens serão reduzidos de acordo com este fator
+  - é um valor de proporção sem unidade que determina o quanto um item deve ser reduzido quando houver um overflow no container
   - `1` (valor padrão): permite que os itens tenham seus tamanhos reduzidos para caber no container
   - `0`: não permite a redução
   - `x > 0`: diminuirá `x` vezes que outros elementos 
-
 - `flex-basis`:
   - determina o tamanho inicial do item antes da distribuição do espaço restante
   - `0`: Se todos os elementos definidos com isso e com `flex-grow >= 1`, tentará manter todos os elementos com a mesma largura
+- `flex`:
+  - shorthand para `flex-grow`, `flex-shrink` e `flex-basis`
 
-- `flex` é uma shorthand para `flex-grow`, `flex-shrink` e `flex-basis`
-  - `flex: 1 -> flex-grow: 1, flex-shrink: 1, flex-basis: auto`
-  - `flex: 0 1 auto (padrão)`
-  - `flex: 2 -> flex-grow: 2, flex-shrink: 1, flex-basis: auto`
 
 
 ### Alinhamento
@@ -151,5 +147,8 @@
 
 ### Ordenamento
 
-- A ordem padrão dos elementos é a ordem do código
-- Permite especificar a ordem de um elemento, do menor para o maior
+- `order`:
+  - Especifica a ordem do elemento
+  - O padrão é 0
+  - Itens com valores mais altos aparecerão depois de itens com valores mais baixos.
+  - Itens com o mesmo valor irão aparecer na ordem de origem.

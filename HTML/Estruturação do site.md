@@ -29,11 +29,15 @@
     - Recomendado que seja aninhado diretamente ao `body`
   - `article`:
     - Bloco de conteúdo que faz sentido por si só, sem o resto da página.
+    - Autocontido
+    - Pretende ser distribuído independentemente
     - Exemplos:
       - Posts de blog
   - `section`:
-    - Agrupar uma **única parte** da página que constitui uma **única peça de funcionalidade** ou **tema**.
-    - Pode ser aninhado dentro de `article` ou inverso.
+    - Agrupa uma única parte da página que constitui uma única peça de funcionalidade ou tema
+    - É recomendado iniciar uma seção com um título, mas nem todas as seções precisam ter títulos
+    - É um elemento genérico para seções autônomas que não possuem um elemento semântico mais específico para representar
+    - Pode ser aninhado dentro de `article` ou inverso
     - Exemplos:
       - Grupos de artigos
   - `aside`:
@@ -45,7 +49,7 @@
     - Conteúdo introdutório.
     - Se estiver definido no `body` vale para a página toda, se estiver no `article` vale pro `article` e etc.
   - `footer`:
-    - Conteúdo no final da página.
+    - Conteúdo de rodapé, geralmente no final da página.
 
 ### Wrapper não semânticos
 

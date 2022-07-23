@@ -27,7 +27,7 @@
 - Iframes é um vetor de ataque comum em páginas web
 - Clickjacking é uma técnica onde pessoas ruins tentam incorporar um documento malicioso ao seu site (ou o contrário) por meio de um iframe invisível para roubar dados.
 - Recomendações:
-  - Incorporar outros documentos somente quando seja completamente necessário.
+  - Incorporar outros documentos somente quando seja extremamente necessário.
   - Usar HTTPS:
     - Reduz a adulteração do conteúdo
     - Previne que iframes acessem o conteúdo pai e vice-versa
@@ -77,8 +77,8 @@
     </object>
     ```
 
-
 ## Exercícios
+
 
 1. Quais são os elementos que permitem incorporar conteúdos mais gerais?
 2. Para agrupar `iframe` utilizamos um *frameset*, onde cada *iframe* é chamado de *frame*. Tal afirmação é verdadeira ou falsa? Por que?
@@ -89,9 +89,9 @@
 7. O que é CSP?
 8. O que é clickjacking?
 9. Cite 4 dicas de segurança para Iframe.
-10. O que o cabeçalho `X-Header-Options: Deny` faz?
+10. O que o cabeçalho `X-Header-Options: DENY` faz?
 11. Com qual elemento podemos incorporar um PDF e quais são os elementos de uso geral além do `iframe` para incorporação de conteúdo?
 12. O que é sandbox e o que o atributo `sandbox` faz em elementos `iframe`?
-13. Por que utilizar HTTPs ao utilizar iframes?
+13. Por que utilizar HTTPs ao utilizar iframes? Reduzir a adulteração de conteúdos, talvez?
 14. Como configurar um `object` para apontar para a URL `https://exemplo.com`?
 15. O que o elemento `param` faz?
