@@ -9,11 +9,12 @@
     - links de navegação
 - `section`:
   - Agrupa uma única parte da página que constitui uma única peça de funcionalidade ou tema
-  - É recomendado iniciar uma seção com um título, mas nem todas as seções precisam ter títulos
   - É um elemento genérico para seções autônomas que não possuem um elemento semântico mais específico para representar
-  - Pode ser aninhado dentro de `article` ou inverso
-  - Exemplos:
-    - Grupos de artigos
+  - Uso:
+    - É recomendado iniciar uma seção com um título, mas nem todas as seções precisam ter títulos
+    - Pode ser aninhado dentro de `article` ou inverso
+    - Exemplos:
+      - Grupos de artigos
 - `article`:
   - Representa uma parte da página que pode ser distribuível e reutilizável.
   - Deve fazer sentido por si só, independentemente do resto do site.

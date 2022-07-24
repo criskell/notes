@@ -17,7 +17,7 @@
 
 - Os itens de um container flex são dispostos ao longo de dois eixos.
 - O eixo principal percorre a direção na qual itens são colocadas e se estende na *dimensão principal*. O início deste eixo é chamado de *main start* e o fim é chamado de *main end*.
-- O tamanho de um item no eixo principal é chamado de *main size*. O tamanho de um item no eixo transversal é chamado de *cross size*. Os tamanhos, respectivamente, podem serem definidos por *largura* ou *altura*, ou vice-versa, dependendo de qual é a direção do eixo principal.
+- O tamanho de um item ou container no eixo principal é chamado de *main size*. O tamanho de um item ou container no eixo transversal é chamado de *cross size*. Os tamanhos, respectivamente, podem serem definidos por *largura* ou *altura*, ou vice-versa, dependendo de qual é a direção do eixo principal.
 - O eixo transversal percorre perpendicularmente ao eixo principal e se estende na *dimensão traversal*.
 - Linhas flex são colocadas iniciando na *cross start* até a *cross end*.
 
@@ -28,19 +28,26 @@
 
 ## Flex container
 
--  É um elemento que recebeu um tipo de exibição interna como `flex` (ex.: `display: inline flex || inline-flex || block flex || flex`) e tornou seus filhos diretos em caixas flexíveis.
+-  É um elemento que recebeu um *tipo de exibição interna* como `flex` e tornou seus filhos diretos em caixas flexíveis.
 
 ### Fluxo de um container
 
 - `flex-direction`:
   - Determina a direção em que o eixo principal percorre.
   - `row`:
-    - Itens serão dispostos em linhas na direção do idioma.
+    - Itens serão dispostos em linhas.
+    - O eixo principal irá fluir na dimensão *inline*, com o *main start* localizado onde as frases começam no modo de escrita. Já o eixo transversal irá fluir na dimensão dos blocos.
+    - São linhas com base no modo de escrita e direção do texto:
+      - Por exemplo, ao utilizar o Inglês, um idioma com o modo de escrita horizontal da esquerda para a direita, a linha será horizontal com o `main-start` na esquerda pois é o lado em que as frases começam no inglês.
+      - Já em idiomas verticais como Japonês, uma linha percorre verticalmente com `main-start` no topo.
   - `column`:
     - Itens serão dispostos em colunas.
-  - `row-reverse`: Igual ao `row`, mas na direção inversa
-  - `column-reverse`: Igual ao `column`, mas na direção inversa
-  
+    - O eixo principal irá fluir na dimensão dos blocos, com o *main start* localizado onde os blocos começam no modo de escrita. Já o eixo transversal irá fluir na dimensão inline.
+  - `row-reverse`:
+    - Igual ao `row`, mas na direção inversa.
+    - O *main start* será a borda final do container.
+  - `column-reverse`:
+    - Igual ao `column`, mas na direção inversa
 - `flex-wrap`
   - Controla se o container é de única linha ou de múltiplas linhas.
   - `nowrap`:
@@ -51,7 +58,6 @@
     - Itens serão quebrados em novas linhas ao longo do eixo transversal se for necessário
   - `wrap-reverse`:
     - O mesmo acima, mas com as direções trocadas
-  
 - A propriedade `flex-flow` é uma shorthand para `flex-direction` e `flex-wrap`:
   - `flex-flow: row wrap`
   - `flex-flow: column nowrap`
@@ -60,8 +66,8 @@
 
 - `justify-content`:
   - Alinha os itens ao longo do eixo principal.
+  - Estes valores tratam da distribuição do espaço disponível no container, ou seja, funciona apenas se os itens não ocuparem todo o container.
   - Após todos os comprimentos flexíveis e quaisquer margens automáticas serem resolvidas.
-  - Funciona apenas se os itens não ocuparem todo o container.
   - `flex-start`: Alinha ao início da linha
   - `flex-end`: Alinha ao fim da linha
   - `center`: Alinha os itens centralmente
@@ -93,7 +99,7 @@
 - Determinando como será feita a distribuição de linhas geradas pela propriedade `flex-wrap` ao longo do eixo transversal. (`align-content`):
   - Funciona apenas se tiver espaço sobrando no container.
   - `stretch` (padrão):
-    - As linhas são distribuídas de forma que preencham todo o container uniformemente.
+    - As linhas se estendem para ocupar o espaço restante.
   - `flex-start`: Distribui as linhas no início do container.
   - `flex-end`: Distribui as linhas no final do container.
   - `center`: Centraliza as linhas
@@ -118,20 +124,30 @@
 
 - Essas propriedades auxiliam no tamanho dos itens flex e como o container irá lidar com sobra ou falta de espaço.
 - `flex-grow`:
-  - especifica o fator de crescimento de um item
-  - o padrão é 0, ou seja, não crescem, mesmo se tiver espaço sobrando
+  - especifica o fator de crescimento
+  - permite que o item cresça caso haja espaço disponível
+  - largura do item = (flex-grow / total de flex-grow no container) * espaço disponível + largura inicial (flex-basis) onde espaço disponível = antes do flex-glow
 - `flex-shrink`:
   - especifica o fator de redução de um item
-  - quando falta espaço num container, os itens serão reduzidos de acordo com este fator
-  - é um valor de proporção sem unidade que determina o quanto um item deve ser reduzido quando houver um overflow no container
-  - `1` (valor padrão): permite que os itens tenham seus tamanhos reduzidos para caber no container
-  - `0`: não permite a redução
-  - `x > 0`: diminuirá `x` vezes que outros elementos 
+  - quando falta espaço num container (espaço livre negativo), os itens serão reduzidos de acordo com este fator
 - `flex-basis`:
-  - determina o tamanho inicial do item antes da distribuição do espaço restante
-  - `0`: Se todos os elementos definidos com isso e com `flex-grow >= 1`, tentará manter todos os elementos com a mesma largura
+  - Determina o tamanho inicial do item antes de qualquer coisa
+  - Valores:
+    - `auto`: O tamanho é computado como o valor da propriedade do tamanho principal
+  - Tem prioridade sobre `width`
+  - `flex-basis: 0`: Se todos os elementos definidos com isso e com `flex-grow >= 1`, tentará manter todos os elementos com a mesma largura
 - `flex`:
   - shorthand para `flex-grow`, `flex-shrink` e `flex-basis`
+  - sintaxes:
+    - Um valor:
+      - No caso de um número, é interpretado como `flex: <numero> 1 0`
+      - No caso de um valor válido para a propriedade `width`, é interpretado como `flex: 1 1 <width>`
+      - `auto`: `flex: 1 1 auto`
+    - Dois valores:
+      - 1º: `<number> -> flex-grow`
+      - 2º: `<number> -> flex-shrink (~> flex-basis = 0) || <width> -> flex-basis (~> flex-shrink = 1)`
+    - Três valores:
+      - `flex-grow flex-shrink flex-basis`
 
 
 
