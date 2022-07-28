@@ -168,3 +168,23 @@
   - O padrão é 0
   - Itens com valores mais altos aparecerão depois de itens com valores mais baixos.
   - Itens com o mesmo valor irão aparecer na ordem de origem.
+
+## Dúvidas
+
+### Diferença entre flex-basis e width
+
+- O que `flex-basis` irá se aplicar depende do `flex-direction`:
+  - Se for `row`, controla a largura
+  - Se for `column`, controla a altura
+- Diferenças principais:
+
+| flex-basis                                                   | width                          |
+| ------------------------------------------------------------ | ------------------------------ |
+| Se aplica apenas à itens flexíveis                           | Se aplica a todos os elementos |
+| Funciona apenas no eixo principal, ou seja, não é possível controlar a largura de um elemento com o container `flex-direction: column` | Funciona em todos os eixos     |
+| Não tem efeitos em itens flexíveis absolutamente posicionados | Possui efeito                  |
+
+- Semelhanças:
+  - Não tem diferença em termos de como são *renderizados*, a menos que `flex-basis` seja `auto` ou `content`
+  - `flex-basis` e `width` são *resolvidos* de forma idêntica, a menos que `flex-basis` seja `auto` ou `content`, nestes casos pode usar a largura do conteúdo (onde a largura também usaria)
+  - `(flex-basis: x || width: x || height: x) && flex-shrink >= 1`, não significa necessariamente que a largura/altura renderizada, pois pode vim a encolher
