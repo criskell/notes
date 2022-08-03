@@ -1,0 +1,30 @@
+# Fluxo de um container
+
+- `flex-direction`:
+  - Determina a direção em que o eixo principal percorre.
+  - `row`:
+    - Itens serão dispostos em linhas.
+    - O eixo principal irá fluir na direção *inline*
+    - *main start* localizado onde as frases começam no modo de escrita.
+  - `column`:
+    - Itens serão dispostos em colunas.
+    - O eixo principal irá fluir na direção de fluxo dos blocos
+    - *main start* localizado onde os blocos começam no modo de escrita.
+  - `row-reverse`:
+    - Igual ao `row`, mas na direção inversa.
+    - O *main start* será a borda final do container.
+  - `column-reverse`:
+    - Igual ao `column`, mas na direção inversa
+- `flex-wrap`
+  - Controla se o container é de única linha ou de múltiplas linhas.
+  - `nowrap`:
+    - O container é de única linha
+    - Os itens serão ajustados para caber em apenas uma única linha, sem ultrapassar a largura do container, caso não seja possível, ocorrerá um overflow.
+  - `wrap`:
+    - O container é de múltiplas linhas
+    - Itens serão quebrados em novas linhas ao longo do eixo transversal se for necessário
+  - `wrap-reverse`:
+    - O mesmo acima, mas com as direções trocadas
+- A propriedade `flex-flow` é uma shorthand para `flex-direction` e `flex-wrap`:
+  - `flex-flow: row wrap`
+  - `flex-flow: column nowrap`

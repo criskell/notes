@@ -14,7 +14,7 @@
   - Posição:
     - `background-position: <x> <y>` (dois valores)
     - Altera o posicionamento da imagem de fundo da caixa.
-    - Utiliza um sistema de coordenadas com um eixo x e eixo y onde `(0, 0)` é o canto superior esquerdo da imagem.
+    - Utiliza um sistema de coordenadas com um eixo x e eixo y onde `(0, 0)` é o canto superior esquerdo da caixa.
 - Gradientes:
   - Gradientes se comportam como imagens e portanto são definidas por `background-image`.
 - Várias imagens:
@@ -22,7 +22,7 @@
   - Podemos ter vários valores em propriedades como `background-position` e `background-repeat`.
   - Um valor numa determinada propriedade irá corresponder com outro valor em outra propriedade na mesma posição.
   - Se tiver um número menor de valores, irá ocorrer um ciclo. Por exemplo, se outras propriedades fornecer N valores e uma determinada propriedade fornecer M < N valores, irá repetir os M valores a cada M valores ocorridos em outras propriedades.
--  Fixamento de plano de fundos:
+- Fixamento de plano de fundos:
   - `background-attachment`
   - `background-attachment: scroll`:
     - O plano de fundo é fixo em relação ao **elemento**.
@@ -38,5 +38,5 @@
 - Propriedade abreviada:
   - `background`
   - Podemos inserir vários planos de fundo com uma vírgula.
-  -  `<position>/<size>`
+  - `<position>/<size>`
   - A cor de fundo vem por último.

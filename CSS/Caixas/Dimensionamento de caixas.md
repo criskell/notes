@@ -57,8 +57,6 @@
 
 ## Tipos de dimensionamento
 
-- Extrínsico:
-  - A caixa tem dimensões fixas controladas pelo autor
-  - Há um limite de quanto conteúdo pode adicionar antes saia dos limites da caixa
-- Intrísinco:
-  - A caixa é dimensionada de acordo com a quantidade de conteúdo, sem levar em consideração o contexto
+- Dimensionamento extrínsico é quando a caixa possui uma largura e altura definida e um limite de conteúdo antes que o conteúdo transborde para fora da caixa.
+- Dimensionamento intrínsico de uma caixa é o dimensionamento feito de acordo com o conteúdo dela.
+- Overflow ocorre quando o conteúdo da caixa ultrapassa os limites dela.

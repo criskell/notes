@@ -9,4 +9,5 @@
 ## Redução do tamanho dos itens
 
 - Quando o espaço restante < 0
-- 
+- Para calcular o quanto de espaço um item irá ceder:
+  - `flex-shrink * flex-basis / sum((flex-shrink * flex-basis) de todos os itens) * espaço restante`

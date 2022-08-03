@@ -5,6 +5,9 @@
 - Propriedades que manipulam o objeto de um elemento substituído na caixa de conteúdo:
   - `object-fit`
   - `object-position`
+- Possuem um aspect ratio (proporção).
+- Exibido com suas dimensões intrínsicas, por padrão.
+- `max-width: 100%` em replaced elements: A imagem ficará menor proporcionalmente se as dimensões intrínsicas ultrapassarem a largura do container. 
 
 ## Dimensionamento
 
