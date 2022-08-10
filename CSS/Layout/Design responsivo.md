@@ -92,7 +92,7 @@
 
 1. O que é design da web responsivo (Responsive Web Design - RWD)? É apenas uma tecnologia do CSS ou engloba o HTML também?
 2. Quais são os dois tipos de layouts que podemos criar com `px` e `%`?
-3. O que são imagens *fluídas*. Cite 3 técnicas para criar imagens responsivas.
+3. O que são imagens *fluídas* e quais são as desvantagens? Cite 3 técnicas para criar imagens responsivas.
 4. O que são media queries, breakpoints e o mobile-first design?
 5. O que são grades flexíveis? Além de um layout que podemos alcançar por meio de múltiplas colunas CSS, quais são as outras 3 técnicas que podemos usar?
 6. Como converter um layout em pixels para porcentagem?
