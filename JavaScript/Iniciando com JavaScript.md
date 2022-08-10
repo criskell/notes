@@ -31,7 +31,13 @@
 - Condicionais:
   - Estruturas condicionais são estruturas de código que testa se uma expressão (`test expression`) avalia para verdadeiro.
   - A forma mais comum é a estrutura `if`.
+- Loops:
+  - Loops executam um bloco de código até que uma condição seja atendida.
 - Funções:
   - São blocos de códigos, que dado argumentos, retornam valores.
 - Eventos:
-  - Manipuladores de eventos escutam determinados eventos do usuário e executam código em resposta.
+  - São coisas que acontecem na página, por exemplo, um botão clicado.
+- Escutadores de eventos:
+  - Escutam eventos e executam manipuladores de eventos em resposta.
+- Manipuladores de eventos:
+  - São códigos executados após a ocorrência de um evento.

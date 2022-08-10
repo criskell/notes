@@ -10,6 +10,11 @@
   - Se não definido, o padrão é `auto`
     - colunas dividem o espaço disponível igualmente
     - linhas implícitas sem conteúdo possuem uma altura 0
+- `grid-auto-flow`:
+  - Define como o posicionamento automático irá se comportar.
+  - `row`: O fluxo é em linhas.
+  - `column`: O fluxo é em colunas.
+
 
 ## Grid explícita
 

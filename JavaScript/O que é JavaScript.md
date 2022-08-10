@@ -79,8 +79,7 @@
 
 ## Revisão
 
-1. O que é JavaScript?
-2. O que eu posso fazer com JavaScript?
+1. O que é JavaScript? O que eu posso fazer com JavaScript?
 3. O que são APIs? Quais os tipos de APIs no JavaScript?
 4. Qual é a diferença entre linguagem interpretada e compilada? Em qual categoria o JavaScript se encontra?
 5. Qual é a diferença entre os termos dinâmico e estático relativo ao JavaScript?
@@ -92,4 +91,3 @@
 11. Quando usar um script com `async`?
 12. `async` e `defer` podem funcionar em scripts *internos*?
 13. Quais são os problemas com a estratégia de carregamento no final do elemento `body`?
-14. Qual é a principal diferença entre `async` e `defer`?

@@ -3,7 +3,6 @@
 - Este método consiste em posicionar itens em áreas definidas explicitamente por linhas.
 - Itens que não são posicionados na Grid, são posicionados automaticamente pelo *algoritmo de posicionamento automático*.
 - Cada line é indexada a partir de 1 e se relaciona com o modo de escrita.
-- Podemos contar para trás a partir da 
 
 ## Posicionando itens via linhas
 
@@ -36,7 +35,7 @@
 
 ## span
 
-- `span n`: irá abranger `n` trilhas
+- `span n`: irá abranger `n` trilhas.
 
 ## Exercícios
 
