@@ -84,7 +84,7 @@
   - `initial-scale`:
     - Define o zoom inicial do site.
 - `<meta name="viewport" content="width=device-width, initial-scale=1.0">`:
-  - Sem este elemento definido no HTML, o navegador em dispositivos mobile irão mentir sobre a largura da viewport, e definir para uma largura maior que o do dispositivo, por exemplo: `960px` e diminuirão o zoom da página.
+  - Sem este elemento definido no HTML, o navegador em dispositivos mobile irão mentir sobre a largura da viewport, e definir para uma largura maior que do dispositivo, por exemplo: `960px` e diminuirão o zoom da página.
   - Isso foi feito por que quando os celulares foram lançados, os sites não eram otimizados para dispositivos móveis. A Apple foi a precursora disso.
   - Definir o elemento acima previne este comportamento do celular.
 
