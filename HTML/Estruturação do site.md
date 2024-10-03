@@ -42,6 +42,7 @@
       - Grupos de artigos
   - `aside`:
     - Fornece informações adicionais indiretamente relacionado ao conteúdo principal.
+    - É um conteúdo completamente separado do conteúdo principal.
     - Exemplos:
       - Biografia do autor
       - Links relacionados
